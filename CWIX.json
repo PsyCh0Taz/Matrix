@@ -1,0 +1,1901 @@
+{
+  "schemaVersion": 1,
+  "appVersion": "0.1.0",
+  "catalogVersion": 1,
+  "document": {
+    "id": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+    "name": "CWIX",
+    "revision": 283,
+    "parentHash": "f904eb9e",
+    "createdAt": "2026-07-30T16:46:15.012Z",
+    "updatedAt": "2026-08-03T19:21:36.852Z"
+  },
+  "users": [
+    {
+      "pseudo": "Taz",
+      "label": "Taz",
+      "id": "f9cc5434-4403-4e90-9413-49a9617cbf61",
+      "createdAt": "2026-07-30T16:46:18.461Z",
+      "updatedAt": "2026-08-03T16:30:55.180Z"
+    }
+  ],
+  "zones": [
+    {
+      "name": "ZP_Clients",
+      "color": "#4f7cff",
+      "description": "\n",
+      "external": false,
+      "builtin": false,
+      "id": "db375463-7d3b-4b41-aeb0-22fb7e9f7279",
+      "createdAt": "2026-08-03T16:19:06.245Z",
+      "updatedAt": "2026-08-03T16:19:06.245Z"
+    },
+    {
+      "name": "ZP_Serveurs",
+      "color": "#4f7cff",
+      "description": "",
+      "external": false,
+      "builtin": false,
+      "id": "bef454af-6e76-43fd-9db9-f904d694b4f8",
+      "createdAt": "2026-08-03T16:19:14.428Z",
+      "updatedAt": "2026-08-03T16:19:14.428Z"
+    },
+    {
+      "name": "ZP_Pink",
+      "color": "#fc4dff",
+      "external": true,
+      "description": "",
+      "builtin": false,
+      "id": "88a30498-cb38-4cce-ac78-2b48edf50515",
+      "createdAt": "2026-08-03T16:19:24.356Z",
+      "updatedAt": "2026-08-03T16:19:24.356Z"
+    }
+  ],
+  "vlans": [
+    {
+      "name": "VL_Serveur",
+      "number": 10,
+      "zoneId": "bef454af-6e76-43fd-9db9-f904d694b4f8",
+      "description": "",
+      "external": false,
+      "builtin": false,
+      "id": "e49c3319-49a7-4057-b0bd-dea0b68344a6",
+      "createdAt": "2026-08-03T16:20:16.388Z",
+      "updatedAt": "2026-08-03T16:20:16.388Z"
+    },
+    {
+      "name": "VL_Clients",
+      "number": 20,
+      "zoneId": "db375463-7d3b-4b41-aeb0-22fb7e9f7279",
+      "description": "",
+      "external": false,
+      "builtin": false,
+      "id": "7dbb9862-e624-44a9-9231-6aa4f4680666",
+      "createdAt": "2026-08-03T16:20:29.152Z",
+      "updatedAt": "2026-08-03T16:20:29.152Z"
+    }
+  ],
+  "equipmentTypes": [
+    {
+      "id": "builtin:type:pc",
+      "canonicalId": "type:pc",
+      "name": "PC",
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:type:serveur",
+      "canonicalId": "type:serveur",
+      "name": "Serveur",
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:type:tablette",
+      "canonicalId": "type:tablette",
+      "name": "Tablette",
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:type:switch",
+      "canonicalId": "type:switch",
+      "name": "Switch",
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:type:routeur",
+      "canonicalId": "type:routeur",
+      "name": "Routeur",
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:type:pare-feux",
+      "canonicalId": "type:pare-feux",
+      "name": "Pare-Feux",
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:type:chiffreur",
+      "canonicalId": "type:chiffreur",
+      "name": "Chiffreur",
+      "description": "",
+      "builtin": true
+    }
+  ],
+  "serviceTypes": [
+    {
+      "name": "COTS",
+      "description": "",
+      "external": false,
+      "builtin": false,
+      "id": "76dd5af8-afd7-44ce-b6d3-a468ecb0be9b",
+      "createdAt": "2026-08-03T16:20:36.007Z",
+      "updatedAt": "2026-08-03T17:18:33.505Z"
+    },
+    {
+      "name": "COMMUNS",
+      "description": "",
+      "external": false,
+      "builtin": false,
+      "id": "19e0d2f7-8bdc-4c69-bc25-cef1cc52b4fe",
+      "createdAt": "2026-08-03T16:42:36.977Z",
+      "updatedAt": "2026-08-03T16:42:36.977Z"
+    }
+  ],
+  "protocols": [
+    {
+      "id": "builtin:protocol:tcp",
+      "canonicalId": "protocol:tcp",
+      "name": "TCP",
+      "description": "Protocole de transport",
+      "builtin": true
+    },
+    {
+      "id": "builtin:protocol:udp",
+      "canonicalId": "protocol:udp",
+      "name": "UDP",
+      "description": "Protocole de transport",
+      "builtin": true
+    }
+  ],
+  "knownPorts": [
+    {
+      "id": "builtin:port:tcp:20",
+      "canonicalId": "port:tcp:20",
+      "number": 20,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "FTP données",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:21",
+      "canonicalId": "port:tcp:21",
+      "number": 21,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "FTP contrôle",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:22",
+      "canonicalId": "port:tcp:22",
+      "number": 22,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "SSH",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:23",
+      "canonicalId": "port:tcp:23",
+      "number": 23,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "Telnet",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:25",
+      "canonicalId": "port:tcp:25",
+      "number": 25,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "SMTP",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:53",
+      "canonicalId": "port:tcp:53",
+      "number": 53,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "DNS",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:udp:53",
+      "canonicalId": "port:udp:53",
+      "number": 53,
+      "protocolId": "builtin:protocol:udp",
+      "name": "DNS",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:udp:67",
+      "canonicalId": "port:udp:67",
+      "number": 67,
+      "protocolId": "builtin:protocol:udp",
+      "name": "DHCP serveur",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:udp:68",
+      "canonicalId": "port:udp:68",
+      "number": 68,
+      "protocolId": "builtin:protocol:udp",
+      "name": "DHCP client",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:udp:69",
+      "canonicalId": "port:udp:69",
+      "number": 69,
+      "protocolId": "builtin:protocol:udp",
+      "name": "TFTP",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:80",
+      "canonicalId": "port:tcp:80",
+      "number": 80,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "HTTP",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:110",
+      "canonicalId": "port:tcp:110",
+      "number": 110,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "POP3",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:udp:123",
+      "canonicalId": "port:udp:123",
+      "number": 123,
+      "protocolId": "builtin:protocol:udp",
+      "name": "NTP",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:143",
+      "canonicalId": "port:tcp:143",
+      "number": 143,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "IMAP",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:udp:161",
+      "canonicalId": "port:udp:161",
+      "number": 161,
+      "protocolId": "builtin:protocol:udp",
+      "name": "SNMP",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:udp:162",
+      "canonicalId": "port:udp:162",
+      "number": 162,
+      "protocolId": "builtin:protocol:udp",
+      "name": "SNMP Trap",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:389",
+      "canonicalId": "port:tcp:389",
+      "number": 389,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "LDAP",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:udp:389",
+      "canonicalId": "port:udp:389",
+      "number": 389,
+      "protocolId": "builtin:protocol:udp",
+      "name": "LDAP",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:443",
+      "canonicalId": "port:tcp:443",
+      "number": 443,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "HTTPS",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:445",
+      "canonicalId": "port:tcp:445",
+      "number": 445,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "SMB",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:465",
+      "canonicalId": "port:tcp:465",
+      "number": 465,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "SMTPS",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:636",
+      "canonicalId": "port:tcp:636",
+      "number": 636,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "LDAPS",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:993",
+      "canonicalId": "port:tcp:993",
+      "number": 993,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "IMAPS",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:995",
+      "canonicalId": "port:tcp:995",
+      "number": 995,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "POP3S",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:1433",
+      "canonicalId": "port:tcp:1433",
+      "number": 1433,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "Microsoft SQL Server",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:udp:1434",
+      "canonicalId": "port:udp:1434",
+      "number": 1434,
+      "protocolId": "builtin:protocol:udp",
+      "name": "Microsoft SQL Server",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:1521",
+      "canonicalId": "port:tcp:1521",
+      "number": 1521,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "Oracle",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:3306",
+      "canonicalId": "port:tcp:3306",
+      "number": 3306,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "MySQL",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:3389",
+      "canonicalId": "port:tcp:3389",
+      "number": 3389,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "RDP",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:udp:3389",
+      "canonicalId": "port:udp:3389",
+      "number": 3389,
+      "protocolId": "builtin:protocol:udp",
+      "name": "RDP",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:5432",
+      "canonicalId": "port:tcp:5432",
+      "number": 5432,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "PostgreSQL",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:5900",
+      "canonicalId": "port:tcp:5900",
+      "number": 5900,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "VNC",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:5985",
+      "canonicalId": "port:tcp:5985",
+      "number": 5985,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "WinRM HTTP",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:5986",
+      "canonicalId": "port:tcp:5986",
+      "number": 5986,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "WinRM HTTPS",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    },
+    {
+      "id": "builtin:port:tcp:6379",
+      "canonicalId": "port:tcp:6379",
+      "number": 6379,
+      "protocolId": "builtin:protocol:tcp",
+      "name": "Redis",
+      "aliases": [],
+      "description": "",
+      "builtin": true
+    }
+  ],
+  "equipments": [
+    {
+      "name": "CLI_PC_ADM1",
+      "typeId": "builtin:type:pc",
+      "zoneId": "db375463-7d3b-4b41-aeb0-22fb7e9f7279",
+      "status": "ONLINE",
+      "manufacturer": "",
+      "model": "",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "ETH0",
+          "mac": "",
+          "description": "",
+          "vlanMode": "none",
+          "accessVlanId": null,
+          "nativeVlanId": null,
+          "taggedVlanIds": [],
+          "ips": [
+            {
+              "family": 4,
+              "address": "192.168.10.1",
+              "prefix": null,
+              "vlanId": null,
+              "untagged": false,
+              "id": "ca44597b-c747-4b28-8a1f-c5fb21057b1b",
+              "createdAt": "2026-08-03T19:01:03.145Z",
+              "updatedAt": "2026-08-03T19:01:03.145Z"
+            }
+          ],
+          "dns": [
+            {
+              "name": "pc1.clnf.fr",
+              "ipIds": [],
+              "id": "ed794788-1ef1-4d12-a640-049ded8901aa",
+              "createdAt": "2026-08-03T19:01:03.145Z",
+              "updatedAt": "2026-08-03T19:01:03.145Z"
+            }
+          ],
+          "id": "9a4c86dc-5066-4b2a-8fea-2f4081d54931",
+          "createdAt": "2026-08-03T16:32:33.880Z",
+          "updatedAt": "2026-08-03T19:01:03.145Z"
+        },
+        {
+          "name": "DNSPC1",
+          "mac": "",
+          "description": "",
+          "vlanMode": "none",
+          "accessVlanId": null,
+          "nativeVlanId": null,
+          "taggedVlanIds": [],
+          "ips": [
+            {
+              "family": 4,
+              "address": "192.168.20.1",
+              "prefix": null,
+              "vlanId": null,
+              "untagged": false,
+              "id": "0d86e75d-5d35-48bd-ac71-2b8e0521b35a",
+              "createdAt": "2026-08-03T19:01:58.419Z",
+              "updatedAt": "2026-08-03T19:01:58.419Z"
+            }
+          ],
+          "dns": [
+            {
+              "name": "adm1.clnf.fr",
+              "ipIds": [
+                "0d86e75d-5d35-48bd-ac71-2b8e0521b35a"
+              ],
+              "id": "31b13977-f62a-4d9d-9899-4b26820cf458",
+              "createdAt": "2026-08-03T19:01:58.419Z",
+              "updatedAt": "2026-08-03T19:01:58.419Z"
+            }
+          ],
+          "id": "8700e77d-76ce-4a54-9ce0-2fef0d849280",
+          "createdAt": "2026-08-03T19:01:58.419Z",
+          "updatedAt": "2026-08-03T19:01:58.419Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "ss",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T16:22:47.309Z",
+          "id": "aa0b6039-a428-4f27-9b73-e3fa94aeffc7",
+          "createdAt": "2026-08-03T16:22:47.309Z",
+          "updatedAt": "2026-08-03T16:22:47.309Z"
+        }
+      ],
+      "id": "30e5bc83-e012-46b3-8024-864c24f2352a",
+      "createdAt": "2026-08-03T16:22:47.309Z",
+      "updatedAt": "2026-08-03T19:02:08.448Z"
+    },
+    {
+      "name": "SVR_ICC",
+      "typeId": "builtin:type:serveur",
+      "zoneId": "bef454af-6e76-43fd-9db9-f904d694b4f8",
+      "status": "ONLINE",
+      "manufacturer": "",
+      "model": "",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "eth0",
+          "mac": "",
+          "description": "",
+          "vlanMode": "none",
+          "accessVlanId": null,
+          "nativeVlanId": null,
+          "taggedVlanIds": [],
+          "ips": [
+            {
+              "family": 4,
+              "address": "192.168.100.10",
+              "prefix": null,
+              "vlanId": null,
+              "untagged": false,
+              "id": "322e6a28-7124-4bd2-8a7a-daaf1bcdf9d5",
+              "createdAt": "2026-08-03T16:33:13.159Z",
+              "updatedAt": "2026-08-03T17:03:27.064Z"
+            }
+          ],
+          "dns": [
+            {
+              "name": "svr-icc.clnf.fr",
+              "ipIds": [
+                "322e6a28-7124-4bd2-8a7a-daaf1bcdf9d5"
+              ],
+              "id": "ef377532-505c-42ed-be0c-c3b38df744f7",
+              "createdAt": "2026-08-03T16:33:13.159Z",
+              "updatedAt": "2026-08-03T17:03:27.064Z"
+            }
+          ],
+          "id": "08020c75-6e13-453c-acf5-9b162b66702b",
+          "createdAt": "2026-08-03T16:33:13.159Z",
+          "updatedAt": "2026-08-03T17:03:27.064Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "ss",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T16:23:16.466Z",
+          "id": "be3b67c5-9b92-420a-bdcb-c997ac705478",
+          "createdAt": "2026-08-03T16:23:16.466Z",
+          "updatedAt": "2026-08-03T16:23:16.466Z"
+        }
+      ],
+      "id": "2c6b615d-136c-4d45-9894-c32dd76d63ff",
+      "createdAt": "2026-08-03T16:23:16.466Z",
+      "updatedAt": "2026-08-03T17:43:35.840Z"
+    },
+    {
+      "name": "CLI_PC_ADM2",
+      "typeId": "builtin:type:pc",
+      "zoneId": "db375463-7d3b-4b41-aeb0-22fb7e9f7279",
+      "status": "ONLINE",
+      "manufacturer": "",
+      "model": "",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "eth0",
+          "mac": "",
+          "description": "",
+          "vlanMode": "none",
+          "accessVlanId": null,
+          "nativeVlanId": null,
+          "taggedVlanIds": [],
+          "ips": [
+            {
+              "family": 4,
+              "address": "192.168.10.2",
+              "prefix": null,
+              "vlanId": null,
+              "untagged": false,
+              "id": "ef07ac10-b426-4cd5-b828-47a841094b36",
+              "createdAt": "2026-08-03T19:00:34.248Z",
+              "updatedAt": "2026-08-03T19:00:34.248Z"
+            }
+          ],
+          "dns": [
+            {
+              "name": "pc2.clnf.fr",
+              "ipIds": [],
+              "id": "76adf260-767e-44e4-ac28-8cde011c08d6",
+              "createdAt": "2026-08-03T19:00:34.248Z",
+              "updatedAt": "2026-08-03T19:00:34.248Z"
+            }
+          ],
+          "id": "27b427b3-96e5-4180-9665-42b00dc015ff",
+          "createdAt": "2026-08-03T16:41:31.426Z",
+          "updatedAt": "2026-08-03T19:00:34.248Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "PENDING",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T16:40:56.115Z",
+          "id": "45aa8a86-affc-4d1d-8df5-ea805921cd88",
+          "createdAt": "2026-08-03T16:40:56.115Z",
+          "updatedAt": "2026-08-03T16:40:56.115Z"
+        },
+        {
+          "oldStatus": "PENDING",
+          "newStatus": "ONLINE",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T16:41:02.116Z",
+          "id": "b58af160-b893-41e9-bcf2-8a8c284c47f4",
+          "createdAt": "2026-08-03T16:41:02.116Z",
+          "updatedAt": "2026-08-03T16:41:02.116Z"
+        }
+      ],
+      "id": "d443a8fc-5d49-4093-b5ac-c60d382a3c70",
+      "createdAt": "2026-08-03T16:40:56.115Z",
+      "updatedAt": "2026-08-03T19:00:42.825Z"
+    },
+    {
+      "name": "PINK_CLI_1",
+      "typeId": "builtin:type:pc",
+      "zoneId": "88a30498-cb38-4cce-ac78-2b48edf50515",
+      "status": "ONLINE",
+      "manufacturer": "",
+      "model": "",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "eth0",
+          "mac": "",
+          "description": "",
+          "vlanMode": "none",
+          "accessVlanId": null,
+          "nativeVlanId": null,
+          "taggedVlanIds": [],
+          "ips": [
+            {
+              "family": 4,
+              "address": "192.167.1.10",
+              "prefix": null,
+              "vlanId": null,
+              "untagged": false,
+              "id": "9ea734ef-2c07-47b6-a0db-03a9f5040676",
+              "createdAt": "2026-08-03T16:53:51.729Z",
+              "updatedAt": "2026-08-03T16:53:51.729Z"
+            }
+          ],
+          "dns": [],
+          "id": "cace40d3-30ac-4012-9258-ad214d9c00dc",
+          "createdAt": "2026-08-03T16:53:51.729Z",
+          "updatedAt": "2026-08-03T16:53:51.729Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T16:52:27.165Z",
+          "id": "761f445b-6879-45e9-9a13-bf50691078df",
+          "createdAt": "2026-08-03T16:52:27.165Z",
+          "updatedAt": "2026-08-03T16:52:27.165Z"
+        }
+      ],
+      "id": "c862a0ae-2ec8-45db-8dfc-4b7e084d31f8",
+      "createdAt": "2026-08-03T16:52:27.165Z",
+      "updatedAt": "2026-08-03T18:49:10.752Z"
+    },
+    {
+      "name": "SVR_FICHIER",
+      "typeId": "builtin:type:serveur",
+      "zoneId": "bef454af-6e76-43fd-9db9-f904d694b4f8",
+      "status": "ONLINE",
+      "manufacturer": "",
+      "model": "",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "eth0",
+          "mac": "",
+          "description": "",
+          "vlanMode": "none",
+          "accessVlanId": null,
+          "nativeVlanId": null,
+          "taggedVlanIds": [],
+          "ips": [
+            {
+              "family": 4,
+              "address": "192.168.1.12",
+              "prefix": null,
+              "vlanId": null,
+              "untagged": false,
+              "id": "003ebe19-cec6-4e4f-9109-ac5440c2871e",
+              "createdAt": "2026-08-03T17:54:43.731Z",
+              "updatedAt": "2026-08-03T17:54:43.731Z"
+            }
+          ],
+          "dns": [],
+          "id": "f6f5f24f-7527-40b4-8bcb-8caf7123feff",
+          "createdAt": "2026-08-03T17:54:43.731Z",
+          "updatedAt": "2026-08-03T17:54:43.731Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T17:53:50.241Z",
+          "id": "dd3c7074-4b18-4347-8320-a85b6840be56",
+          "createdAt": "2026-08-03T17:53:50.241Z",
+          "updatedAt": "2026-08-03T17:53:50.241Z"
+        }
+      ],
+      "id": "786deef8-7c09-4c2d-a2a2-9ac57e231c78",
+      "createdAt": "2026-08-03T17:53:50.241Z",
+      "updatedAt": "2026-08-03T17:55:17.142Z"
+    },
+    {
+      "name": "PINK_CLI_2",
+      "typeId": "builtin:type:pc",
+      "zoneId": "88a30498-cb38-4cce-ac78-2b48edf50515",
+      "status": "ONLINE",
+      "manufacturer": "",
+      "model": "",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "eth0",
+          "mac": "",
+          "description": "",
+          "vlanMode": "none",
+          "accessVlanId": null,
+          "nativeVlanId": null,
+          "taggedVlanIds": [],
+          "ips": [],
+          "dns": [],
+          "id": "4fe6ed5e-aa52-4b19-a401-636dcfaf9487",
+          "createdAt": "2026-08-03T18:42:52.197Z",
+          "updatedAt": "2026-08-03T18:42:52.197Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T18:42:52.197Z",
+          "id": "015db3d2-1bec-451c-bf74-efe7469f3bef",
+          "createdAt": "2026-08-03T18:42:52.197Z",
+          "updatedAt": "2026-08-03T18:42:52.197Z"
+        }
+      ],
+      "id": "23dd766f-b542-4746-8380-ba09c60e902d",
+      "createdAt": "2026-08-03T18:42:52.197Z",
+      "updatedAt": "2026-08-03T18:49:52.159Z"
+    },
+    {
+      "name": "CLI_PC_ADM3",
+      "typeId": "builtin:type:pc",
+      "zoneId": "db375463-7d3b-4b41-aeb0-22fb7e9f7279",
+      "status": "ONLINE",
+      "manufacturer": "",
+      "model": "",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "eth0",
+          "mac": "",
+          "description": "",
+          "vlanMode": "none",
+          "accessVlanId": null,
+          "nativeVlanId": null,
+          "taggedVlanIds": [],
+          "ips": [
+            {
+              "family": 4,
+              "address": "192.168.10.3",
+              "prefix": null,
+              "vlanId": null,
+              "untagged": false,
+              "id": "deaf1528-ffc8-44c6-80ce-84ea8bd446e6",
+              "createdAt": "2026-08-03T19:00:10.167Z",
+              "updatedAt": "2026-08-03T19:00:10.167Z"
+            }
+          ],
+          "dns": [
+            {
+              "name": "pc3.clnf.fr",
+              "ipIds": [],
+              "id": "713d35b9-cb6b-4224-a027-7b1c56fef54e",
+              "createdAt": "2026-08-03T19:00:10.167Z",
+              "updatedAt": "2026-08-03T19:00:10.167Z"
+            }
+          ],
+          "id": "add06882-5834-49ed-9954-b676fba0652d",
+          "createdAt": "2026-08-03T18:59:30.443Z",
+          "updatedAt": "2026-08-03T19:00:10.168Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T18:59:30.443Z",
+          "id": "6ff35ef8-5b16-443d-a74d-9106f863fd03",
+          "createdAt": "2026-08-03T18:59:30.443Z",
+          "updatedAt": "2026-08-03T18:59:30.443Z"
+        }
+      ],
+      "id": "5837c2de-7565-4915-b037-dc878f24630b",
+      "createdAt": "2026-08-03T18:59:30.443Z",
+      "updatedAt": "2026-08-03T19:00:37.000Z"
+    },
+    {
+      "name": "SW_1",
+      "typeId": "builtin:type:routeur",
+      "zoneId": "bef454af-6e76-43fd-9db9-f904d694b4f8",
+      "status": "ONLINE",
+      "manufacturer": "",
+      "model": "",
+      "description": "",
+      "interfaces": [
+        {
+          "name": "if0/1",
+          "mac": "",
+          "description": "",
+          "vlanMode": "none",
+          "accessVlanId": null,
+          "nativeVlanId": null,
+          "taggedVlanIds": [],
+          "ips": [],
+          "dns": [
+            {
+              "name": "sw.clnf.fr",
+              "ipIds": [],
+              "id": "89849a19-4af7-47e7-b3b6-fb5d968d6bf1",
+              "createdAt": "2026-08-03T19:04:41.696Z",
+              "updatedAt": "2026-08-03T19:04:41.696Z"
+            }
+          ],
+          "id": "976474ec-4a4b-45fe-96f5-38ff4b21c952",
+          "createdAt": "2026-08-03T19:04:41.696Z",
+          "updatedAt": "2026-08-03T19:04:41.696Z"
+        },
+        {
+          "name": "if0/2",
+          "mac": "",
+          "description": "",
+          "vlanMode": "none",
+          "accessVlanId": null,
+          "nativeVlanId": null,
+          "taggedVlanIds": [],
+          "ips": [],
+          "dns": [],
+          "id": "828dfb01-1298-4220-96d0-f8f21460866a",
+          "createdAt": "2026-08-03T19:04:46.158Z",
+          "updatedAt": "2026-08-03T19:05:02.613Z"
+        },
+        {
+          "name": "if0/3",
+          "mac": "",
+          "description": "",
+          "vlanMode": "none",
+          "accessVlanId": null,
+          "nativeVlanId": null,
+          "taggedVlanIds": [],
+          "ips": [],
+          "dns": [],
+          "id": "5c6ef1ce-dfe6-435d-abb1-105f4500c857",
+          "createdAt": "2026-08-03T19:04:51.317Z",
+          "updatedAt": "2026-08-03T19:05:11.024Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T19:03:37.804Z",
+          "id": "60b3da0e-1df3-469b-9fa8-6b8c95500f90",
+          "createdAt": "2026-08-03T19:03:37.804Z",
+          "updatedAt": "2026-08-03T19:03:37.804Z"
+        }
+      ],
+      "id": "6bb8e048-f673-41b0-aab0-12dd5639ebe5",
+      "createdAt": "2026-08-03T19:03:37.804Z",
+      "updatedAt": "2026-08-03T19:08:16.975Z"
+    }
+  ],
+  "services": [
+    {
+      "name": "SVR_ICC",
+      "equipmentId": "2c6b615d-136c-4d45-9894-c32dd76d63ff",
+      "typeId": "76dd5af8-afd7-44ce-b6d3-a468ecb0be9b",
+      "version": "1.2.3",
+      "status": "ONLINE",
+      "description": "",
+      "listeners": [
+        {
+          "equipmentId": "2c6b615d-136c-4d45-9894-c32dd76d63ff",
+          "kind": "interface",
+          "refId": "08020c75-6e13-453c-acf5-9b162b66702b",
+          "id": "2cb8098e-30fe-4b6c-84d7-5637cde4acc0",
+          "createdAt": "2026-08-03T17:49:14.237Z",
+          "updatedAt": "2026-08-03T17:49:14.237Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "ss",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T16:24:52.169Z",
+          "id": "1ec9fc1b-c509-459d-a407-d6777adcb1ec",
+          "createdAt": "2026-08-03T16:24:52.169Z",
+          "updatedAt": "2026-08-03T16:24:52.169Z"
+        }
+      ],
+      "id": "596a95e2-2bbc-483f-b3dd-4de2f221da4b",
+      "createdAt": "2026-08-03T16:24:52.170Z",
+      "updatedAt": "2026-08-03T18:49:46.046Z",
+      "protocolId": "builtin:protocol:tcp",
+      "ports": [
+        {
+          "start": 1521,
+          "end": 1521,
+          "usage": ""
+        }
+      ]
+    },
+    {
+      "name": "CLI_ICC",
+      "equipmentId": "d443a8fc-5d49-4093-b5ac-c60d382a3c70",
+      "typeId": "76dd5af8-afd7-44ce-b6d3-a468ecb0be9b",
+      "version": "1.2.3",
+      "status": "ONLINE",
+      "description": "",
+      "listeners": [
+        {
+          "id": "04e9a366-f334-4956-8b01-e78499a3474d",
+          "equipmentId": "d443a8fc-5d49-4093-b5ac-c60d382a3c70",
+          "kind": "interface",
+          "refId": "27b427b3-96e5-4180-9665-42b00dc015ff",
+          "createdAt": "2026-08-03T17:41:39.254Z",
+          "updatedAt": "2026-08-03T19:16:44.473Z"
+        },
+        {
+          "id": "ec8309cf-cc72-4f0d-9c06-b2d2302eba64",
+          "equipmentId": "30e5bc83-e012-46b3-8024-864c24f2352a",
+          "kind": "interface",
+          "refId": "9a4c86dc-5066-4b2a-8fea-2f4081d54931",
+          "createdAt": "2026-08-03T17:42:06.598Z",
+          "updatedAt": "2026-08-03T19:16:44.473Z"
+        },
+        {
+          "id": "1346d597-acd5-4ef5-8570-4fed46652e3f",
+          "equipmentId": "c862a0ae-2ec8-45db-8dfc-4b7e084d31f8",
+          "kind": "interface",
+          "refId": "cace40d3-30ac-4012-9258-ad214d9c00dc",
+          "createdAt": "2026-08-03T18:42:07.602Z",
+          "updatedAt": "2026-08-03T19:16:44.473Z"
+        },
+        {
+          "id": "3f7f86f4-4f84-4876-98db-d411fb938c99",
+          "equipmentId": "23dd766f-b542-4746-8380-ba09c60e902d",
+          "kind": "interface",
+          "refId": "4fe6ed5e-aa52-4b19-a401-636dcfaf9487",
+          "createdAt": "2026-08-03T18:49:55.364Z",
+          "updatedAt": "2026-08-03T19:16:44.473Z"
+        },
+        {
+          "id": "f38fb30c-ace8-4cd2-887d-2f7dfe87f319",
+          "equipmentId": "5837c2de-7565-4915-b037-dc878f24630b",
+          "kind": "interface",
+          "refId": "add06882-5834-49ed-9954-b676fba0652d",
+          "createdAt": "2026-08-03T18:59:30.443Z",
+          "updatedAt": "2026-08-03T19:16:44.473Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "ss",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T16:25:32.760Z",
+          "id": "3d94403b-01c3-441d-be4f-a1bec39eb013",
+          "createdAt": "2026-08-03T16:25:32.760Z",
+          "updatedAt": "2026-08-03T16:25:32.760Z"
+        },
+        {
+          "oldStatus": "ONLINE",
+          "newStatus": "CRASHED",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T19:10:34.486Z",
+          "id": "c29d9754-458c-4929-a880-bd862e3a7a6c",
+          "createdAt": "2026-08-03T19:10:34.486Z",
+          "updatedAt": "2026-08-03T19:10:34.486Z"
+        },
+        {
+          "oldStatus": "CRASHED",
+          "newStatus": "ONLINE",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T19:16:44.473Z",
+          "id": "7e318e4b-619e-43e1-971e-8b999280b544",
+          "createdAt": "2026-08-03T19:16:44.473Z",
+          "updatedAt": "2026-08-03T19:16:44.473Z"
+        }
+      ],
+      "id": "e7ef9f29-e017-4c0b-a8ca-914abefbaaa8",
+      "createdAt": "2026-08-03T16:25:32.760Z",
+      "updatedAt": "2026-08-03T19:16:44.473Z",
+      "protocolId": "builtin:protocol:tcp",
+      "ports": [
+        {
+          "start": 0,
+          "end": 0,
+          "usage": ""
+        }
+      ]
+    },
+    {
+      "name": "CLI_OUTLOOK",
+      "equipmentId": "d443a8fc-5d49-4093-b5ac-c60d382a3c70",
+      "typeId": "19e0d2f7-8bdc-4c69-bc25-cef1cc52b4fe",
+      "version": "",
+      "status": "ONLINE",
+      "description": "",
+      "listeners": [],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T16:43:11.449Z",
+          "id": "3bc02352-6e0c-4ece-9b3b-219d2eb82a78",
+          "createdAt": "2026-08-03T16:43:11.449Z",
+          "updatedAt": "2026-08-03T16:43:11.449Z"
+        }
+      ],
+      "id": "82a3a415-631b-468e-a824-84dddcf83102",
+      "createdAt": "2026-08-03T16:43:11.449Z",
+      "updatedAt": "2026-08-03T19:00:34.248Z",
+      "protocolId": "builtin:protocol:tcp",
+      "ports": [
+        {
+          "start": 25,
+          "end": 25,
+          "usage": ""
+        },
+        {
+          "start": 445,
+          "end": 445,
+          "usage": ""
+        }
+      ]
+    },
+    {
+      "name": "SVR_EXCHANGE",
+      "equipmentId": "786deef8-7c09-4c2d-a2a2-9ac57e231c78",
+      "typeId": "19e0d2f7-8bdc-4c69-bc25-cef1cc52b4fe",
+      "version": "",
+      "status": "ONLINE",
+      "description": "",
+      "listeners": [
+        {
+          "id": "97f325e0-8ae0-4ab7-b700-30f83a5d2c4b",
+          "equipmentId": "786deef8-7c09-4c2d-a2a2-9ac57e231c78",
+          "kind": "interface",
+          "refId": "f6f5f24f-7527-40b4-8bcb-8caf7123feff",
+          "createdAt": "2026-08-03T17:54:55.752Z",
+          "updatedAt": "2026-08-03T17:56:04.857Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T17:04:43.192Z",
+          "id": "8cb71753-9f03-4d93-9493-25b3e4f5db11",
+          "createdAt": "2026-08-03T17:04:43.192Z",
+          "updatedAt": "2026-08-03T17:04:43.192Z"
+        }
+      ],
+      "id": "764df1f9-f0d7-45fc-8d58-d8b283298a90",
+      "createdAt": "2026-08-03T17:04:43.192Z",
+      "updatedAt": "2026-08-03T17:56:04.857Z",
+      "protocolId": "builtin:protocol:tcp",
+      "ports": [
+        {
+          "start": 25,
+          "end": 25,
+          "usage": "SMTP"
+        },
+        {
+          "start": 445,
+          "end": 445,
+          "usage": "JSP"
+        }
+      ]
+    },
+    {
+      "name": "SVR_SAMBA",
+      "typeId": "19e0d2f7-8bdc-4c69-bc25-cef1cc52b4fe",
+      "version": "",
+      "status": "ONLINE",
+      "description": "",
+      "equipmentId": "786deef8-7c09-4c2d-a2a2-9ac57e231c78",
+      "listeners": [
+        {
+          "id": "9517ba82-74e1-4e60-9dee-04e4ef427505",
+          "equipmentId": "786deef8-7c09-4c2d-a2a2-9ac57e231c78",
+          "kind": "interface",
+          "refId": "f6f5f24f-7527-40b4-8bcb-8caf7123feff",
+          "createdAt": "2026-08-03T17:55:20.367Z",
+          "updatedAt": "2026-08-03T17:55:51.161Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T17:24:22.825Z",
+          "id": "f9d738af-422d-4330-8888-6bbfcc1b15f9",
+          "createdAt": "2026-08-03T17:24:22.825Z",
+          "updatedAt": "2026-08-03T17:24:22.825Z"
+        }
+      ],
+      "id": "87b765dc-a3b9-4913-b4d5-df115385bb76",
+      "createdAt": "2026-08-03T17:24:22.825Z",
+      "updatedAt": "2026-08-03T17:55:51.161Z",
+      "protocolId": "builtin:protocol:tcp",
+      "ports": [
+        {
+          "start": 445,
+          "end": 445,
+          "usage": ""
+        }
+      ]
+    },
+    {
+      "name": "CLI_SAMBA",
+      "typeId": "19e0d2f7-8bdc-4c69-bc25-cef1cc52b4fe",
+      "version": "",
+      "status": "ONLINE",
+      "description": "",
+      "equipmentId": "c862a0ae-2ec8-45db-8dfc-4b7e084d31f8",
+      "listeners": [
+        {
+          "id": "d24f02e0-d3a0-4248-9b78-a246af348a84",
+          "equipmentId": "c862a0ae-2ec8-45db-8dfc-4b7e084d31f8",
+          "kind": "interface",
+          "refId": "cace40d3-30ac-4012-9258-ad214d9c00dc",
+          "createdAt": "2026-08-03T17:37:28.797Z",
+          "updatedAt": "2026-08-03T17:51:36.416Z"
+        },
+        {
+          "equipmentId": "30e5bc83-e012-46b3-8024-864c24f2352a",
+          "kind": "interface",
+          "refId": "9a4c86dc-5066-4b2a-8fea-2f4081d54931",
+          "id": "29cb0628-4d00-4f4e-8d33-f3c57d9163d8",
+          "createdAt": "2026-08-03T17:51:36.416Z",
+          "updatedAt": "2026-08-03T17:51:36.416Z"
+        },
+        {
+          "equipmentId": "d443a8fc-5d49-4093-b5ac-c60d382a3c70",
+          "kind": "interface",
+          "refId": "27b427b3-96e5-4180-9665-42b00dc015ff",
+          "id": "607e2ee7-a2ad-46c0-b86f-de52a390bf38",
+          "createdAt": "2026-08-03T17:51:36.416Z",
+          "updatedAt": "2026-08-03T17:51:36.416Z"
+        },
+        {
+          "id": "3f83df48-c8ab-43ed-ba61-57bc449cd6d8",
+          "equipmentId": "23dd766f-b542-4746-8380-ba09c60e902d",
+          "kind": "interface",
+          "refId": "4fe6ed5e-aa52-4b19-a401-636dcfaf9487",
+          "createdAt": "2026-08-03T18:42:52.197Z",
+          "updatedAt": "2026-08-03T18:42:52.197Z"
+        },
+        {
+          "equipmentId": "5837c2de-7565-4915-b037-dc878f24630b",
+          "kind": "interface",
+          "refId": "add06882-5834-49ed-9954-b676fba0652d",
+          "id": "704e038a-850c-4f4d-964e-45dc4cbfdc0d",
+          "createdAt": "2026-08-03T18:59:30.443Z",
+          "updatedAt": "2026-08-03T18:59:30.443Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T17:37:28.797Z",
+          "id": "070e0744-8541-42cf-b19b-e2a309da97be",
+          "createdAt": "2026-08-03T17:37:28.797Z",
+          "updatedAt": "2026-08-03T17:37:28.797Z"
+        }
+      ],
+      "id": "fce63c31-5a18-42f3-b0f4-0f6d1a7e4872",
+      "createdAt": "2026-08-03T17:37:28.797Z",
+      "updatedAt": "2026-08-03T18:59:30.443Z",
+      "protocolId": "builtin:protocol:tcp",
+      "ports": [
+        {
+          "start": 0,
+          "end": 0,
+          "usage": ""
+        }
+      ]
+    },
+    {
+      "name": "LNK_ICC",
+      "typeId": "76dd5af8-afd7-44ce-b6d3-a468ecb0be9b",
+      "protocolId": "builtin:protocol:tcp",
+      "version": "",
+      "status": "ONLINE",
+      "description": "",
+      "equipmentId": "c862a0ae-2ec8-45db-8dfc-4b7e084d31f8",
+      "listeners": [
+        {
+          "equipmentId": "c862a0ae-2ec8-45db-8dfc-4b7e084d31f8",
+          "kind": "interface",
+          "refId": "cace40d3-30ac-4012-9258-ad214d9c00dc",
+          "id": "e479a981-dcb1-4671-9b25-e557b52da8f6",
+          "createdAt": "2026-08-03T18:51:52.780Z",
+          "updatedAt": "2026-08-03T18:51:52.780Z"
+        },
+        {
+          "equipmentId": "23dd766f-b542-4746-8380-ba09c60e902d",
+          "kind": "interface",
+          "refId": "4fe6ed5e-aa52-4b19-a401-636dcfaf9487",
+          "id": "daebbb73-fb4e-4f41-af50-b0e43809732d",
+          "createdAt": "2026-08-03T18:51:52.780Z",
+          "updatedAt": "2026-08-03T18:51:52.780Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T18:51:52.780Z",
+          "id": "c332974f-4d23-4b69-87a9-a29ea37a1af1",
+          "createdAt": "2026-08-03T18:51:52.780Z",
+          "updatedAt": "2026-08-03T18:51:52.780Z"
+        }
+      ],
+      "id": "366da634-e647-48ae-848d-6a6b7f3753d2",
+      "createdAt": "2026-08-03T18:51:52.780Z",
+      "updatedAt": "2026-08-03T18:51:52.780Z",
+      "ports": [
+        {
+          "start": 1521,
+          "end": 1521,
+          "usage": ""
+        }
+      ]
+    },
+    {
+      "name": "SW_Routage",
+      "typeId": "19e0d2f7-8bdc-4c69-bc25-cef1cc52b4fe",
+      "protocolId": "builtin:protocol:tcp",
+      "version": "",
+      "status": "ONLINE",
+      "description": "",
+      "equipmentId": "6bb8e048-f673-41b0-aab0-12dd5639ebe5",
+      "listeners": [
+        {
+          "equipmentId": "6bb8e048-f673-41b0-aab0-12dd5639ebe5",
+          "kind": "interface",
+          "refId": "976474ec-4a4b-45fe-96f5-38ff4b21c952",
+          "id": "765c2faa-6d43-4b1d-be63-e31f83db29e1",
+          "createdAt": "2026-08-03T19:09:12.377Z",
+          "updatedAt": "2026-08-03T19:09:12.377Z"
+        }
+      ],
+      "history": [
+        {
+          "oldStatus": null,
+          "newStatus": "ONLINE",
+          "pseudo": "Taz",
+          "reason": "",
+          "originDocumentUUID": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
+          "occurredAt": "2026-08-03T19:09:12.377Z",
+          "id": "c1a821ca-00d6-40a3-a794-b637e6f63a6f",
+          "createdAt": "2026-08-03T19:09:12.377Z",
+          "updatedAt": "2026-08-03T19:09:12.377Z"
+        }
+      ],
+      "id": "0576a367-d32c-407c-8112-527e145d398c",
+      "createdAt": "2026-08-03T19:09:12.377Z",
+      "updatedAt": "2026-08-03T19:09:12.377Z",
+      "ports": [
+        {
+          "start": 1,
+          "end": 65535,
+          "usage": ""
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "endpoints": [
+        {
+          "serviceId": "596a95e2-2bbc-483f-b3dd-4de2f221da4b",
+          "listenerId": "2cb8098e-30fe-4b6c-84d7-5637cde4acc0",
+          "ports": [
+            {
+              "start": 1521,
+              "end": 1521,
+              "usage": ""
+            }
+          ]
+        },
+        {
+          "serviceId": "e7ef9f29-e017-4c0b-a8ca-914abefbaaa8",
+          "listenerId": "04e9a366-f334-4956-8b01-e78499a3474d",
+          "ports": [
+            {
+              "start": 0,
+              "end": 0,
+              "usage": ""
+            }
+          ]
+        }
+      ],
+      "protocolId": "builtin:protocol:tcp",
+      "direction": "both",
+      "description": "",
+      "anomalies": [],
+      "id": "2a6749aa-8edb-4e2b-90e4-dea4cd6ce74f",
+      "createdAt": "2026-08-03T17:49:28.989Z",
+      "updatedAt": "2026-08-03T19:16:44.473Z",
+      "status": "PENDING"
+    },
+    {
+      "endpoints": [
+        {
+          "serviceId": "596a95e2-2bbc-483f-b3dd-4de2f221da4b",
+          "listenerId": "2cb8098e-30fe-4b6c-84d7-5637cde4acc0",
+          "ports": [
+            {
+              "start": 1521,
+              "end": 1521,
+              "usage": ""
+            }
+          ]
+        },
+        {
+          "serviceId": "e7ef9f29-e017-4c0b-a8ca-914abefbaaa8",
+          "listenerId": "ec8309cf-cc72-4f0d-9c06-b2d2302eba64",
+          "ports": [
+            {
+              "start": 0,
+              "end": 0,
+              "usage": ""
+            }
+          ]
+        }
+      ],
+      "protocolId": "builtin:protocol:tcp",
+      "direction": "both",
+      "description": "",
+      "anomalies": [],
+      "id": "d935624c-c4fb-41dc-836d-6b94033a9a36",
+      "createdAt": "2026-08-03T17:49:51.732Z",
+      "updatedAt": "2026-08-03T19:21:36.852Z",
+      "status": "ONLINE",
+      "groupContexts": []
+    },
+    {
+      "endpoints": [
+        {
+          "serviceId": "764df1f9-f0d7-45fc-8d58-d8b283298a90",
+          "listenerId": "97f325e0-8ae0-4ab7-b700-30f83a5d2c4b",
+          "ports": [
+            {
+              "start": 25,
+              "end": 25,
+              "usage": "SMTP"
+            },
+            {
+              "start": 445,
+              "end": 445,
+              "usage": "JSP"
+            }
+          ]
+        },
+        {
+          "serviceId": "e7ef9f29-e017-4c0b-a8ca-914abefbaaa8",
+          "listenerId": "ec8309cf-cc72-4f0d-9c06-b2d2302eba64",
+          "ports": [
+            {
+              "start": 0,
+              "end": 0,
+              "usage": ""
+            }
+          ]
+        }
+      ],
+      "protocolId": "builtin:protocol:tcp",
+      "direction": "both",
+      "description": "",
+      "anomalies": [],
+      "id": "02d83c77-e553-4a73-8ca8-7084ab15de11",
+      "createdAt": "2026-08-03T17:56:32.317Z",
+      "updatedAt": "2026-08-03T19:20:49.093Z",
+      "status": "ONLINE",
+      "groupContexts": []
+    },
+    {
+      "endpoints": [
+        {
+          "serviceId": "764df1f9-f0d7-45fc-8d58-d8b283298a90",
+          "listenerId": "97f325e0-8ae0-4ab7-b700-30f83a5d2c4b",
+          "ports": [
+            {
+              "start": 25,
+              "end": 25,
+              "usage": "SMTP"
+            },
+            {
+              "start": 445,
+              "end": 445,
+              "usage": "JSP"
+            }
+          ]
+        },
+        {
+          "serviceId": "e7ef9f29-e017-4c0b-a8ca-914abefbaaa8",
+          "listenerId": "04e9a366-f334-4956-8b01-e78499a3474d",
+          "ports": [
+            {
+              "start": 0,
+              "end": 0,
+              "usage": ""
+            }
+          ]
+        }
+      ],
+      "protocolId": "builtin:protocol:tcp",
+      "direction": "both",
+      "description": "",
+      "anomalies": [],
+      "id": "72c022b1-0d3f-44c9-b392-7bc69ff5d50a",
+      "createdAt": "2026-08-03T17:56:38.292Z",
+      "updatedAt": "2026-08-03T19:21:17.036Z",
+      "status": "ONLINE",
+      "groupContexts": []
+    },
+    {
+      "endpoints": [
+        {
+          "serviceId": "596a95e2-2bbc-483f-b3dd-4de2f221da4b",
+          "listenerId": "2cb8098e-30fe-4b6c-84d7-5637cde4acc0",
+          "ports": [
+            {
+              "start": 1521,
+              "end": 1521,
+              "usage": ""
+            }
+          ]
+        },
+        {
+          "serviceId": "e7ef9f29-e017-4c0b-a8ca-914abefbaaa8",
+          "listenerId": "1346d597-acd5-4ef5-8570-4fed46652e3f",
+          "ports": [
+            {
+              "start": 0,
+              "end": 0,
+              "usage": ""
+            }
+          ]
+        }
+      ],
+      "protocolId": "builtin:protocol:tcp",
+      "direction": "both",
+      "description": "",
+      "anomalies": [],
+      "id": "72f8df99-a7a4-4f82-a72b-d73740733565",
+      "createdAt": "2026-08-03T18:50:24.562Z",
+      "updatedAt": "2026-08-03T19:21:00.502Z",
+      "groupContexts": [],
+      "status": "ONLINE"
+    },
+    {
+      "endpoints": [
+        {
+          "serviceId": "596a95e2-2bbc-483f-b3dd-4de2f221da4b",
+          "listenerId": "2cb8098e-30fe-4b6c-84d7-5637cde4acc0",
+          "ports": [
+            {
+              "start": 1521,
+              "end": 1521,
+              "usage": ""
+            }
+          ]
+        },
+        {
+          "serviceId": "e7ef9f29-e017-4c0b-a8ca-914abefbaaa8",
+          "listenerId": "3f7f86f4-4f84-4876-98db-d411fb938c99",
+          "ports": [
+            {
+              "start": 0,
+              "end": 0,
+              "usage": ""
+            }
+          ]
+        }
+      ],
+      "protocolId": "builtin:protocol:tcp",
+      "direction": "both",
+      "description": "",
+      "anomalies": [],
+      "id": "58e6fbbf-0ded-46b5-9634-c1cb72e9ada9",
+      "createdAt": "2026-08-03T18:50:36.278Z",
+      "updatedAt": "2026-08-03T19:21:10.664Z",
+      "status": "CRASHED",
+      "groupContexts": []
+    },
+    {
+      "endpoints": [
+        {
+          "serviceId": "fce63c31-5a18-42f3-b0f4-0f6d1a7e4872",
+          "listenerId": "3f83df48-c8ab-43ed-ba61-57bc449cd6d8",
+          "ports": [
+            {
+              "start": 0,
+              "end": 0,
+              "usage": ""
+            }
+          ]
+        },
+        {
+          "serviceId": "87b765dc-a3b9-4913-b4d5-df115385bb76",
+          "listenerId": "9517ba82-74e1-4e60-9dee-04e4ef427505",
+          "ports": [
+            {
+              "start": 445,
+              "end": 445,
+              "usage": ""
+            }
+          ]
+        }
+      ],
+      "protocolId": "builtin:protocol:tcp",
+      "direction": "both",
+      "description": "",
+      "anomalies": [],
+      "id": "372f79ed-80c5-4d81-9c37-bd0f812bc45e",
+      "createdAt": "2026-08-03T18:50:55.251Z",
+      "updatedAt": "2026-08-03T19:20:45.381Z",
+      "status": "ONLINE",
+      "groupContexts": []
+    },
+    {
+      "endpoints": [
+        {
+          "serviceId": "fce63c31-5a18-42f3-b0f4-0f6d1a7e4872",
+          "listenerId": "d24f02e0-d3a0-4248-9b78-a246af348a84",
+          "ports": [
+            {
+              "start": 0,
+              "end": 0,
+              "usage": ""
+            }
+          ]
+        },
+        {
+          "serviceId": "87b765dc-a3b9-4913-b4d5-df115385bb76",
+          "listenerId": "9517ba82-74e1-4e60-9dee-04e4ef427505",
+          "ports": [
+            {
+              "start": 445,
+              "end": 445,
+              "usage": ""
+            }
+          ]
+        }
+      ],
+      "protocolId": "builtin:protocol:tcp",
+      "direction": "both",
+      "description": "",
+      "anomalies": [],
+      "id": "01c032db-9737-4d9c-891d-8f8ad5e42925",
+      "createdAt": "2026-08-03T18:51:03.409Z",
+      "updatedAt": "2026-08-03T19:20:37.960Z",
+      "status": "ONLINE",
+      "groupContexts": []
+    },
+    {
+      "endpoints": [
+        {
+          "serviceId": "366da634-e647-48ae-848d-6a6b7f3753d2",
+          "listenerId": "e479a981-dcb1-4671-9b25-e557b52da8f6",
+          "ports": [
+            {
+              "start": 1521,
+              "end": 1521,
+              "usage": ""
+            }
+          ]
+        },
+        {
+          "serviceId": "366da634-e647-48ae-848d-6a6b7f3753d2",
+          "listenerId": "daebbb73-fb4e-4f41-af50-b0e43809732d",
+          "ports": [
+            {
+              "start": 1521,
+              "end": 1521,
+              "usage": ""
+            }
+          ]
+        }
+      ],
+      "protocolId": "builtin:protocol:tcp",
+      "direction": "both",
+      "description": "",
+      "anomalies": [],
+      "id": "f096f0fd-da4f-4e2c-9dd3-210ea32a7c44",
+      "createdAt": "2026-08-03T18:52:07.177Z",
+      "updatedAt": "2026-08-03T19:20:41.281Z",
+      "groupContexts": [],
+      "status": "ONLINE"
+    },
+    {
+      "endpoints": [
+        {
+          "serviceId": "596a95e2-2bbc-483f-b3dd-4de2f221da4b",
+          "listenerId": "2cb8098e-30fe-4b6c-84d7-5637cde4acc0",
+          "ports": [
+            {
+              "start": 1521,
+              "end": 1521,
+              "usage": ""
+            }
+          ]
+        },
+        {
+          "serviceId": "e7ef9f29-e017-4c0b-a8ca-914abefbaaa8",
+          "listenerId": "f38fb30c-ace8-4cd2-887d-2f7dfe87f319",
+          "ports": [
+            {
+              "start": 0,
+              "end": 0,
+              "usage": ""
+            }
+          ]
+        }
+      ],
+      "protocolId": "builtin:protocol:tcp",
+      "direction": "both",
+      "description": "",
+      "anomalies": [],
+      "id": "35fd6f1a-8e0f-497c-aaa9-b1b2587e4aaa",
+      "createdAt": "2026-08-03T18:59:30.443Z",
+      "updatedAt": "2026-08-03T19:21:26.121Z",
+      "groupContexts": [],
+      "status": "ONLINE"
+    },
+    {
+      "endpoints": [
+        {
+          "serviceId": "764df1f9-f0d7-45fc-8d58-d8b283298a90",
+          "listenerId": "97f325e0-8ae0-4ab7-b700-30f83a5d2c4b",
+          "ports": [
+            {
+              "start": 25,
+              "end": 25,
+              "usage": "SMTP"
+            },
+            {
+              "start": 445,
+              "end": 445,
+              "usage": "JSP"
+            }
+          ]
+        },
+        {
+          "serviceId": "e7ef9f29-e017-4c0b-a8ca-914abefbaaa8",
+          "listenerId": "f38fb30c-ace8-4cd2-887d-2f7dfe87f319",
+          "ports": [
+            {
+              "start": 0,
+              "end": 0,
+              "usage": ""
+            }
+          ]
+        }
+      ],
+      "protocolId": "builtin:protocol:tcp",
+      "direction": "both",
+      "description": "",
+      "anomalies": [],
+      "id": "56f524b8-af32-4c74-929f-b16d9a37150e",
+      "createdAt": "2026-08-03T18:59:30.443Z",
+      "updatedAt": "2026-08-03T19:21:31.401Z",
+      "groupContexts": [],
+      "status": "ONLINE"
+    }
+  ],
+  "positions": {
+    "desktop": {
+      "30e5bc83-e012-46b3-8024-864c24f2352a": {
+        "x": -120.9,
+        "y": -22.7
+      },
+      "2c6b615d-136c-4d45-9894-c32dd76d63ff": {
+        "x": 811,
+        "y": 273.7
+      },
+      "d443a8fc-5d49-4093-b5ac-c60d382a3c70": {
+        "x": 57.599999999999994,
+        "y": -20
+      },
+      "c862a0ae-2ec8-45db-8dfc-4b7e084d31f8": {
+        "x": -111.89999999999998,
+        "y": 240.20000000000007
+      },
+      "786deef8-7c09-4c2d-a2a2-9ac57e231c78": {
+        "x": 812.8,
+        "y": 398.9
+      },
+      "23dd766f-b542-4746-8380-ba09c60e902d": {
+        "x": -118.89999999999998,
+        "y": 453.20000000000005
+      },
+      "5837c2de-7565-4915-b037-dc878f24630b": {
+        "x": 250.3,
+        "y": -17.7
+      },
+      "6bb8e048-f673-41b0-aab0-12dd5639ebe5": {
+        "x": 618.5,
+        "y": 87.5
+      }
+    },
+    "tablet": {},
+    "phone": {}
+  }
+}
