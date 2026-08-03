@@ -1,14 +1,14 @@
 {
-  "schemaVersion": 2,
-  "appVersion": "1.1.0",
+  "schemaVersion": 1,
+  "appVersion": "0.1.0",
   "catalogVersion": 1,
   "document": {
     "id": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
     "name": "CWIX",
-    "revision": 317,
-    "parentHash": "9b092cb8",
+    "revision": 308,
+    "parentHash": "81441ef8",
     "createdAt": "2026-07-30T16:46:15.012Z",
-    "updatedAt": "2026-08-03T20:25:03.473Z"
+    "updatedAt": "2026-08-03T20:06:00.620Z"
   },
   "users": [
     {
@@ -17,13 +17,6 @@
       "id": "f9cc5434-4403-4e90-9413-49a9617cbf61",
       "createdAt": "2026-07-30T16:46:18.461Z",
       "updatedAt": "2026-08-03T16:30:55.180Z"
-    },
-    {
-      "pseudo": "Private",
-      "label": "Private",
-      "id": "3c054aab-bcba-4182-a938-a74af16efc5e",
-      "createdAt": "2026-08-03T20:22:07.180Z",
-      "updatedAt": "2026-08-03T20:22:07.180Z"
     }
   ],
   "zones": [
@@ -1656,9 +1649,9 @@
       "anomalies": [],
       "id": "72f8df99-a7a4-4f82-a72b-d73740733565",
       "createdAt": "2026-08-03T18:50:24.562Z",
-      "updatedAt": "2026-08-03T20:18:38.247Z",
+      "updatedAt": "2026-08-03T20:00:20.902Z",
       "groupContexts": [],
-      "status": "PENDING"
+      "status": "CRASHED"
     },
     {
       "endpoints": [
@@ -1761,8 +1754,8 @@
       "anomalies": [],
       "id": "01c032db-9737-4d9c-891d-8f8ad5e42925",
       "createdAt": "2026-08-03T18:51:03.409Z",
-      "updatedAt": "2026-08-03T20:24:30.184Z",
-      "status": "PENDING",
+      "updatedAt": "2026-08-03T19:59:35.199Z",
+      "status": "ONLINE",
       "groupContexts": []
     },
     {
@@ -1907,31 +1900,11 @@
         "y": -17.7
       },
       "6bb8e048-f673-41b0-aab0-12dd5639ebe5": {
-        "x": 700.9,
+        "x": 618.5,
         "y": 87.5
       }
     },
     "tablet": {},
     "phone": {}
-  },
-  "auditLog": [
-    {
-      "occurredAt": "2026-08-03T20:24:48.448Z",
-      "pseudo": "Private",
-      "action": "Historique purgé",
-      "revision": 316,
-      "id": "424106b0-0083-4445-9408-e2082e5f2216",
-      "createdAt": "2026-08-03T20:24:48.448Z",
-      "updatedAt": "2026-08-03T20:24:48.448Z"
-    },
-    {
-      "occurredAt": "2026-08-03T20:25:03.473Z",
-      "pseudo": "Taz",
-      "action": "Position cartographique enregistrée",
-      "revision": 317,
-      "id": "1b04d04f-6b5e-4f17-91fb-f28c3731dab9",
-      "createdAt": "2026-08-03T20:25:03.473Z",
-      "updatedAt": "2026-08-03T20:25:03.473Z"
-    }
-  ]
+  }
 }

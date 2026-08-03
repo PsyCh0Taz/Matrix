@@ -1,7 +1,7 @@
 PROJET : Matrix
 
-VERSION_APPLICATION : 1.0.2
-VERSION_SCHEMA : 1
+VERSION_APPLICATION : 1.1.0
+VERSION_SCHEMA : 2
 
 RÈGLE DE VERSIONNEMENT :
 - `VERSION_APPLICATION` est la version de référence du projet.
@@ -82,6 +82,12 @@ Historique des statuts :
 - Une date importée située dans le futur est signalée comme une anomalie d'horloge sans modifier l'événement immuable.
 - Après cette union, si le dernier événement ne correspond pas au statut finalement retenu, une nouvelle entrée de résolution est ajoutée avec le pseudo de l'utilisateur courant.
 - Chaque entrée d'historique enregistre uniquement une copie du pseudo de l'utilisateur courant au moment de l'action.
+
+Historique global des modifications :
+- Chaque transaction métier est enregistrée dans un journal global persistant avec sa date, le pseudo courant, son libellé et la révision du document.
+- Un écran « Historique » permet de consulter, rechercher et filtrer toutes les entrées du journal global.
+- Un bouton « Purger l'historique » supprime les anciennes entrées après confirmation ; l'opération de purge reste elle-même inscrite dans le journal.
+- La migration du schéma 1 vers le schéma 2 initialise le journal global avec une entrée de migration ; les actions antérieures ne sont pas reconstituées.
 
 Flux :
 - Un flux enregistré possède une ou deux extrémités de service renseignées.
@@ -264,12 +270,13 @@ Opérations :
 Persistance locale :
 - Les données sont persistées dans un fichier JSON.
 - Les fichiers de données restent lisibles en clair et ne proposent aucun chiffrement par mot de passe.
-- Un export total contient les équipements, interfaces, adresses IP, noms DNS, services, historiques de statut, flux OK et DRAFT, utilisateurs, zones, VLAN, référentiels, points d'écoute et positions cartographiques.
+- Un export total contient les équipements, interfaces, adresses IP, noms DNS, services, historiques de statut, journal global des modifications, flux OK et DRAFT, utilisateurs, zones, VLAN, référentiels, points d'écoute et positions cartographiques.
 - Il contient également les identifiants, dates et métadonnées de version nécessaires.
 - Le thème, les filtres temporaires, l'utilisateur actuellement sélectionné, la copie de récupération, les permissions et la référence technique du fichier local ouvert sont exclus des exports.
 - L'application propose l'import manuel d'un fichier JSON et son export par téléchargement.
 - L'application propose également, lorsque le navigateur le permet, l'ouverture et la réécriture directes d'un fichier local.
 - Le sélecteur de fichiers d'Edge permet de choisir un document existant sur un partage Windows visible par le poste ; l'application ne tente jamais d'accéder silencieusement à un chemin UNC non autorisé par l'utilisateur.
+- Le handle du dernier fichier partagé sélectionné est conservé localement dans IndexedDB et proposé comme emplacement de départ à l'ouverture suivante ; Edge peut demander une nouvelle autorisation d'accès.
 - Microsoft Edge est obligatoirement pris en charge.
 - Mozilla Firefox est pris en charge dans la mesure permise par ses API ; l'import et l'export JSON manuels y assurent la solution de repli.
 - Les deux dernières versions stables de Microsoft Edge et Mozilla Firefox ainsi que la version Firefox ESR courante sont prises en charge.
@@ -290,6 +297,8 @@ Persistance locale :
 - Lorsqu'un fichier local a été ouvert avec un accès direct en écriture, les modifications y sont sauvegardées automatiquement.
 - Les écritures automatiques sont sérialisées et les modifications rapprochées sont regroupées afin d'éviter les écritures concurrentes.
 - L'interface affiche l'état « Enregistrement », « Enregistré » ou « Échec ».
+- La barre supérieure affiche au centre « Fichier synchronisé » lorsqu'un fichier direct est associé et surveillé, avec son nom en infobulle, ou « Fichier offline » lorsqu'aucun fichier direct n'est associé.
+- Après une sauvegarde, le message précise si elle était automatique, directe, partagée, réalisée par écrasement ou enregistrée dans un nouveau fichier, ainsi que le nom du fichier concerné.
 - En cas d'échec, l'état non sauvegardé est conservé et une nouvelle tentative est proposée.
 - L'application avertit l'utilisateur lorsqu'elle détecte une modification externe du fichier ou une autre instance susceptible d'entrer en concurrence.
 - Tant qu'un fichier direct reste associé, l'application le relit périodiquement afin de détecter les modifications réalisées depuis un autre poste.
