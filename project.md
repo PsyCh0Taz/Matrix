@@ -1,5 +1,16 @@
 PROJET : Matrix
 
+VERSION_APPLICATION : 1.0.2
+VERSION_SCHEMA : 1
+
+RÈGLE DE VERSIONNEMENT :
+- `VERSION_APPLICATION` est la version de référence du projet.
+- `VERSION_SCHEMA` est la version de référence du schéma des documents.
+- La constante `APP_VERSION` de `index.html` doit toujours contenir exactement la même valeur.
+- La constante `SCHEMA_VERSION` de `index.html` doit toujours contenir exactement la même valeur que `VERSION_SCHEMA`.
+- Toute modification d'un numéro de version doit être appliquée simultanément dans `project.md` et `index.html`.
+- Toute évolution incompatible de la structure des documents doit incrémenter `VERSION_SCHEMA` et fournir la migration correspondante avant l'import.
+
 CONTEXTE : 
 - Je suis un développeur / administrateur IT
 - Je dois suivre mes serveurs, PC clients, applications au travers des services qui sont hébergés et des flux qui les relient.
@@ -200,6 +211,7 @@ Opérations :
 - Toute suppression en cascade exige une confirmation explicite de l'utilisateur.
 - La suppression d'une zone, d'un type, d'un VLAN, d'un protocole ou d'une autre valeur de référentiel encore utilisée est interdite.
 - L'application permet de créer, modifier, supprimer et dupliquer les équipements, les services et les flux.
+- Un double-clic sur une ligne des listes d'équipements, de services, de flux, de zones ou de VLAN ouvre directement son formulaire de modification.
 - L'application permet de créer, modifier, supprimer et dupliquer les interfaces réseau.
 - L'application permet de créer, modifier et supprimer les VLAN, zones, types et autres valeurs de référentiels personnalisées.
 - La duplication d'une interface conserve sa description et sa configuration VLAN, numérote automatiquement son nom et laisse vides ses adresses IPv4, IPv6, MAC et ses noms DNS.
@@ -444,6 +456,8 @@ Référentiels métier :
 - La liste des types d'équipements est préchargée et extensible.
 - Les types d'équipements initiaux sont : PC, Serveur, Tablette, Switch, Routeur, Pare-Feux et Chiffreur.
 - Les listes des zones et des types de services démarrent vides.
+- Les zones et les VLAN disposent chacun d'une entrée dans le menu principal et d'un écran de gestion dédié ; ils ne sont pas affichés dans l'écran des référentiels.
+- Le bas du menu principal affiche la signature `Taz - ` suivie du numéro de version déclaré par l'application et de la version du schéma.
 - Les listes des zones et des types de services sont modifiables et extensibles par l'utilisateur.
 - Le nom d'un équipement est unique dans toute l'application.
 - Le nom d'une interface réseau est unique au sein de son équipement.

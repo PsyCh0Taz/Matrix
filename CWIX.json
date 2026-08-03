@@ -5,10 +5,10 @@
   "document": {
     "id": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
     "name": "CWIX",
-    "revision": 283,
-    "parentHash": "f904eb9e",
+    "revision": 299,
+    "parentHash": "77e0523e",
     "createdAt": "2026-07-30T16:46:15.012Z",
-    "updatedAt": "2026-08-03T19:21:36.852Z"
+    "updatedAt": "2026-08-03T19:49:29.663Z"
   },
   "users": [
     {
@@ -32,13 +32,13 @@
     },
     {
       "name": "ZP_Serveurs",
-      "color": "#4f7cff",
+      "color": "#4dffac",
       "description": "",
       "external": false,
       "builtin": false,
       "id": "bef454af-6e76-43fd-9db9-f904d694b4f8",
       "createdAt": "2026-08-03T16:19:14.428Z",
-      "updatedAt": "2026-08-03T16:19:14.428Z"
+      "updatedAt": "2026-08-03T19:49:29.662Z"
     },
     {
       "name": "ZP_Pink",
@@ -144,6 +144,15 @@
       "id": "19e0d2f7-8bdc-4c69-bc25-cef1cc52b4fe",
       "createdAt": "2026-08-03T16:42:36.977Z",
       "updatedAt": "2026-08-03T16:42:36.977Z"
+    },
+    {
+      "name": "COMMUN",
+      "description": "",
+      "external": false,
+      "builtin": false,
+      "id": "683b979c-a4a3-445f-b11f-6d4c954766ef",
+      "createdAt": "2026-08-03T19:38:06.395Z",
+      "updatedAt": "2026-08-03T19:38:06.395Z"
     }
   ],
   "protocols": [
@@ -1059,7 +1068,7 @@
       ],
       "id": "596a95e2-2bbc-483f-b3dd-4de2f221da4b",
       "createdAt": "2026-08-03T16:24:52.170Z",
-      "updatedAt": "2026-08-03T18:49:46.046Z",
+      "updatedAt": "2026-08-03T19:41:33.918Z",
       "protocolId": "builtin:protocol:tcp",
       "ports": [
         {
@@ -1155,7 +1164,7 @@
       ],
       "id": "e7ef9f29-e017-4c0b-a8ca-914abefbaaa8",
       "createdAt": "2026-08-03T16:25:32.760Z",
-      "updatedAt": "2026-08-03T19:16:44.473Z",
+      "updatedAt": "2026-08-03T19:41:33.918Z",
       "protocolId": "builtin:protocol:tcp",
       "ports": [
         {
@@ -1167,7 +1176,7 @@
     },
     {
       "name": "CLI_OUTLOOK",
-      "equipmentId": "d443a8fc-5d49-4093-b5ac-c60d382a3c70",
+      "equipmentId": null,
       "typeId": "19e0d2f7-8bdc-4c69-bc25-cef1cc52b4fe",
       "version": "",
       "status": "ONLINE",
@@ -1188,7 +1197,7 @@
       ],
       "id": "82a3a415-631b-468e-a824-84dddcf83102",
       "createdAt": "2026-08-03T16:43:11.449Z",
-      "updatedAt": "2026-08-03T19:00:34.248Z",
+      "updatedAt": "2026-08-03T19:41:33.918Z",
       "protocolId": "builtin:protocol:tcp",
       "ports": [
         {
@@ -1235,7 +1244,7 @@
       ],
       "id": "764df1f9-f0d7-45fc-8d58-d8b283298a90",
       "createdAt": "2026-08-03T17:04:43.192Z",
-      "updatedAt": "2026-08-03T17:56:04.857Z",
+      "updatedAt": "2026-08-03T19:41:33.918Z",
       "protocolId": "builtin:protocol:tcp",
       "ports": [
         {
@@ -1282,7 +1291,7 @@
       ],
       "id": "87b765dc-a3b9-4913-b4d5-df115385bb76",
       "createdAt": "2026-08-03T17:24:22.825Z",
-      "updatedAt": "2026-08-03T17:55:51.161Z",
+      "updatedAt": "2026-08-03T19:41:33.918Z",
       "protocolId": "builtin:protocol:tcp",
       "ports": [
         {
@@ -1356,7 +1365,7 @@
       ],
       "id": "fce63c31-5a18-42f3-b0f4-0f6d1a7e4872",
       "createdAt": "2026-08-03T17:37:28.797Z",
-      "updatedAt": "2026-08-03T18:59:30.443Z",
+      "updatedAt": "2026-08-03T19:41:33.918Z",
       "protocolId": "builtin:protocol:tcp",
       "ports": [
         {
@@ -1407,7 +1416,7 @@
       ],
       "id": "366da634-e647-48ae-848d-6a6b7f3753d2",
       "createdAt": "2026-08-03T18:51:52.780Z",
-      "updatedAt": "2026-08-03T18:51:52.780Z",
+      "updatedAt": "2026-08-03T19:41:33.918Z",
       "ports": [
         {
           "start": 1521,
@@ -1449,7 +1458,7 @@
       ],
       "id": "0576a367-d32c-407c-8112-527e145d398c",
       "createdAt": "2026-08-03T19:09:12.377Z",
-      "updatedAt": "2026-08-03T19:09:12.377Z",
+      "updatedAt": "2026-08-03T19:41:33.918Z",
       "ports": [
         {
           "start": 1,
@@ -1491,8 +1500,8 @@
       "anomalies": [],
       "id": "2a6749aa-8edb-4e2b-90e4-dea4cd6ce74f",
       "createdAt": "2026-08-03T17:49:28.989Z",
-      "updatedAt": "2026-08-03T19:16:44.473Z",
-      "status": "PENDING"
+      "updatedAt": "2026-08-03T19:24:17.444Z",
+      "status": "ONLINE"
     },
     {
       "endpoints": [
@@ -1675,8 +1684,8 @@
       "anomalies": [],
       "id": "58e6fbbf-0ded-46b5-9634-c1cb72e9ada9",
       "createdAt": "2026-08-03T18:50:36.278Z",
-      "updatedAt": "2026-08-03T19:21:10.664Z",
-      "status": "CRASHED",
+      "updatedAt": "2026-08-03T19:24:08.328Z",
+      "status": "ONLINE",
       "groupContexts": []
     },
     {
@@ -1780,9 +1789,9 @@
       "anomalies": [],
       "id": "f096f0fd-da4f-4e2c-9dd3-210ea32a7c44",
       "createdAt": "2026-08-03T18:52:07.177Z",
-      "updatedAt": "2026-08-03T19:20:41.281Z",
+      "updatedAt": "2026-08-03T19:24:40.091Z",
       "groupContexts": [],
-      "status": "ONLINE"
+      "status": "PENDING"
     },
     {
       "endpoints": [

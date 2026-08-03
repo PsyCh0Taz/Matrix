@@ -23,10 +23,10 @@
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}.hidden{display:none!important}
 .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:14px;padding:10px 16px;background:#111820;color:#fff;box-shadow:0 3px 18px #0005}.brand{font-size:21px;font-weight:800;letter-spacing:.3px;white-space:nowrap}.brand sup{color:#ff3131}.docname{min-width:120px;max-width:280px;flex:1;border:1px solid #ffffff33;background:#ffffff12;color:#fff;border-radius:8px;padding:7px 9px}.top-actions{display:flex;align-items:center;gap:8px;margin-left:auto}.current-user{color:#dce6f4;white-space:nowrap}.save-state{font-size:12px;color:#aebdce}.save-icon{font-size:18px;line-height:1;padding:7px 9px}
 .iconbtn,.btn{border:1px solid var(--line);border-radius:9px;background:var(--panel);padding:8px 11px}.topbar .iconbtn{background:#ffffff12;border-color:#ffffff33;color:#fff}.btn:hover,.iconbtn:hover{filter:brightness(1.06)}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}.btn.danger{background:var(--danger);border-color:var(--danger);color:#fff}.btn.ghost{background:transparent}.btn.small{padding:5px 8px;font-size:12px}.btn:disabled{opacity:.45;cursor:not-allowed}
-.layout{display:grid;grid-template-columns:210px minmax(0,1fr);min-height:calc(100vh - 57px)}nav{position:sticky;top:57px;height:calc(100vh - 57px);padding:14px 10px;border-right:1px solid var(--line);background:var(--panel)}nav button{display:flex;width:100%;gap:9px;align-items:center;border:0;border-radius:9px;padding:10px;background:transparent;text-align:left;color:var(--muted)}nav button.active{background:var(--panel2);color:var(--text);font-weight:700}main{min-width:0;padding:20px}
+.layout{display:grid;grid-template-columns:210px minmax(0,1fr);min-height:calc(100vh - 57px)}nav{position:sticky;top:57px;height:calc(100vh - 57px);display:flex;flex-direction:column;padding:14px 10px;border-right:1px solid var(--line);background:var(--panel)}nav button{display:flex;width:100%;gap:9px;align-items:center;border:0;border-radius:9px;padding:10px;background:transparent;text-align:left;color:var(--muted)}nav button.active{background:var(--panel2);color:var(--text);font-weight:700}.app-version{margin-top:auto;padding:12px 10px 4px;color:var(--muted);font-size:12px;font-weight:700;text-align:center;border-top:1px solid var(--line)}main{min-width:0;padding:20px}
 .view{display:none}.view.active{display:block}.viewhead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}.viewhead h1{font-size:24px;margin:0}.actions{display:flex;gap:8px;flex-wrap:wrap}.toolbar{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:0 0 14px}.search{min-width:240px;flex:1;border:1px solid var(--line);border-radius:9px;background:var(--panel);padding:9px 11px}
 .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:15px}.stat strong{font-size:28px;display:block}.muted{color:var(--muted)}.card h2,.card h3{margin:0 0 10px}.span2{grid-column:span 2}.empty{padding:38px 16px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:var(--radius)}
-.tablewrap{overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}table{width:100%;border-collapse:collapse}th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}th{position:sticky;top:0;background:var(--panel2);font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}tbody tr:hover{background:color-mix(in srgb,var(--panel2) 62%,transparent)}td .actions{flex-wrap:nowrap}
+.tablewrap{overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}table{width:100%;border-collapse:collapse}th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}th{position:sticky;top:0;background:var(--panel2);font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}tbody tr:hover{background:color-mix(in srgb,var(--panel2) 62%,transparent)}tbody tr.editable-row{cursor:pointer}td .actions{flex-wrap:nowrap}
 .badge{display:inline-flex;align-items:center;border:1px solid currentColor;border-radius:999px;padding:3px 8px;font-size:11px;font-weight:800;background:var(--panel2)}.badge.ONLINE,.badge.OK{color:var(--ok);background:color-mix(in srgb,var(--ok) 10%,var(--panel))}.badge.OFFLINE{color:var(--muted);background:color-mix(in srgb,var(--muted) 10%,var(--panel))}.badge.CRASHED,.badge.DRAFT{color:var(--danger);background:color-mix(in srgb,var(--danger) 10%,var(--panel))}.badge.PENDING{color:var(--warn);background:color-mix(in srgb,var(--warn) 12%,var(--panel))}.dot{width:8px;height:8px;border-radius:50%;background:currentColor;margin-right:5px}
 dialog{width:min(760px,calc(100% - 24px));max-height:92vh;border:1px solid var(--line);border-radius:16px;padding:0;background:var(--panel);color:var(--text);box-shadow:0 28px 90px #0008}dialog::backdrop{background:#07101bbb;backdrop-filter:blur(2px)}.modalhead,.modalfoot{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line)}.modalfoot{border-bottom:0;border-top:1px solid var(--line);justify-content:flex-end;gap:8px}.modalbody{padding:18px;overflow:auto;max-height:70vh}.modalhead h2{margin:0;font-size:19px}
 .formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700;color:var(--muted)}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:9px;background:var(--bg);padding:9px}.field textarea{min-height:80px;resize:vertical}.help{font-size:11px;color:var(--muted)}.errorbox{margin-bottom:12px;padding:10px;border:1px solid var(--danger);border-radius:9px;color:var(--danger);background:color-mix(in srgb,var(--danger) 8%,transparent)}
@@ -36,7 +36,7 @@ dialog{width:min(760px,calc(100% - 24px));max-height:92vh;border:1px solid var(-
 .zone-group>rect{pointer-events:none}
 .toastbox{position:fixed;right:16px;bottom:16px;z-index:80;display:flex;flex-direction:column;gap:8px}.toast{max-width:360px;padding:11px 13px;background:#17212b;color:#fff;border-radius:10px;box-shadow:var(--shadow)}.toast.error{background:#8e2020}.toast.ok{background:#146b42}
 @media(max-width:1050px){.grid{grid-template-columns:repeat(2,1fr)}.refgrid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:760px){.topbar{flex-wrap:wrap}.docname{order:3;max-width:none;width:100%}.layout{display:block}nav{position:sticky;top:97px;height:auto;z-index:15;display:flex;overflow:auto;border-right:0;border-bottom:1px solid var(--line);padding:6px;background:var(--panel)}nav button{width:auto;white-space:nowrap}main{padding:12px}.grid,.refgrid,.detailcols,.formgrid{grid-template-columns:1fr}.span2{grid-column:auto}.field.full{grid-column:auto}.current-user,.save-state{display:none}.viewhead{align-items:flex-start}.tablewrap{font-size:12px}th,td{padding:8px}#mapSvg{min-height:480px}}
+@media(max-width:760px){.topbar{flex-wrap:wrap}.docname{order:3;max-width:none;width:100%}.layout{display:block}nav{position:sticky;top:97px;height:auto;z-index:15;display:flex;flex-direction:row;overflow:auto;border-right:0;border-bottom:1px solid var(--line);padding:6px;background:var(--panel)}nav button{width:auto;white-space:nowrap}.app-version{flex:0 0 auto;margin:0 0 0 auto;padding:10px;border-top:0;border-left:1px solid var(--line);white-space:nowrap}main{padding:12px}.grid,.refgrid,.detailcols,.formgrid{grid-template-columns:1fr}.span2{grid-column:auto}.field.full{grid-column:auto}.current-user,.save-state{display:none}.viewhead{align-items:flex-start}.tablewrap{font-size:12px}th,td{padding:8px}#mapSvg{min-height:480px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 .zone-label{cursor:move;user-select:none}
 .actions [data-detail]{display:none!important}
@@ -56,14 +56,17 @@ dialog{width:min(760px,calc(100% - 24px));max-height:92vh;border:1px solid var(-
 <div class="layout">
 <nav aria-label="Navigation principale">
   <button data-view="dashboard" class="active">⌂ Tableau de bord</button>
+  <button data-view="map">◎ Cartographie</button>
   <button data-view="equipments">▣ Équipements</button>
   <button data-view="services">◆ Services</button>
   <button data-view="flows">↔ Flux</button>
-  <button data-view="search">⌕ Recherche</button>
-  <button data-view="map">◎ Cartographie</button>
-  <button data-view="references">≡ Référentiels</button>
+  <button data-view="zones">◫ Zones</button>
+  <button data-view="vlans">▤ VLAN</button>
   <button data-view="users">♙ Utilisateurs</button>
+  <button data-view="references">≡ Référentiels</button>
+  <button data-view="search">⌕ Recherche</button>
   <button data-view="data">⇅ Données</button>
+  <div id="appVersion" class="app-version" aria-label="Version de l'application"></div>
 </nav>
 <main>
   <section id="view-dashboard" class="view active"></section>
@@ -72,6 +75,8 @@ dialog{width:min(760px,calc(100% - 24px));max-height:92vh;border:1px solid var(-
   <section id="view-flows" class="view"></section>
   <section id="view-search" class="view"></section>
   <section id="view-map" class="view"></section>
+  <section id="view-zones" class="view"></section>
+  <section id="view-vlans" class="view"></section>
   <section id="view-references" class="view"></section>
   <section id="view-users" class="view"></section>
   <section id="view-data" class="view"></section>
@@ -88,7 +93,8 @@ dialog{width:min(760px,calc(100% - 24px));max-height:92vh;border:1px solid var(-
 <div id="toasts" class="toastbox" aria-live="polite"></div>
 <script>
 "use strict";
-const APP_VERSION="0.1.0",SCHEMA_VERSION=1,CATALOG_VERSION=1;
+// Synchronisé avec VERSION_APPLICATION et VERSION_SCHEMA dans project.md.
+const APP_VERSION="1.0.2",SCHEMA_VERSION=1,CATALOG_VERSION=1;
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const now=()=>new Date().toISOString();
 const uid=()=>crypto.randomUUID?crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,c=>{const r=Math.random()*16|0;return(c==="x"?r:r&3|8).toString(16)});
@@ -115,7 +121,7 @@ const statusBlockingRank={ONLINE:0,PENDING:1,OFFLINE:2,CRASHED:3};
 function mostBlockingStatus(statuses){return statuses.reduce((worst,current)=>(statusBlockingRank[current]??-1)>(statusBlockingRank[worst]??-1)?current:worst,"ONLINE")}
 const statusCycle=["ONLINE","PENDING","OFFLINE","CRASHED"];
 function nextStatus(status){return statusCycle[(statusCycle.indexOf(status)+1)%statusCycle.length]}
-const listFilters={equipments:{zoneId:"",typeId:"",status:""},services:{equipmentId:"",typeId:"",status:""},flows:{protocolId:"",status:"",flowState:"",direction:"",serviceId:""}};
+const listFilters={equipments:{zoneId:"",typeId:"",status:""},services:{equipmentId:"",typeId:"",status:""},flows:{protocolId:"",status:"",flowState:"",direction:"",serviceId:""},zones:{external:""},vlans:{zoneId:""}};
 function currentUser(){return state.users.find(x=>x.id===currentUserId)||null}
 function userPseudo(){return currentUser()?.pseudo||"non renseigné"}
 function entityMeta(item){const t=now();return Object.assign(item,{id:item.id||uid(),createdAt:item.createdAt||t,updatedAt:t})}
@@ -181,8 +187,8 @@ function showModalError(msg){let b=$(".errorbox",$("#modalBody"));if(!b){b=docum
 function confirmAction(title,message,onYes){modal(title,`<p>${message}</p>`,()=>onYes(),{submit:"Confirmer"})}
 function historyEntry(oldStatus,newStatus,reason=""){return entityMeta({oldStatus:oldStatus||null,newStatus,pseudo:userPseudo(),reason,originDocumentUUID:state.document.id,occurredAt:now()})}
 function setView(name){currentView=name;const p=loadPrefs();p.views=p.views||{};p.views[state.document.id]=name;localStorage.setItem("matrix:prefs",JSON.stringify(p));$$("nav button").forEach(b=>b.classList.toggle("active",b.dataset.view===name));$$(".view").forEach(v=>v.classList.toggle("active",v.id==="view-"+name));renderView(name)}
-function render(){$("#docName").value=state.document.name;$("#userButton").textContent=currentUser()?`♙ ${currentUser().pseudo}`:"♙ Utilisateur…";$$("nav button").forEach(b=>b.classList.toggle("active",b.dataset.view===currentView));$$(".view").forEach(v=>v.classList.toggle("active",v.id==="view-"+currentView));renderView(currentView)}
-function renderView(v){({dashboard:renderDashboard,equipments:renderEquipments,services:renderServices,flows:renderFlows,search:renderGlobalSearch,map:renderMap,references:renderReferences,users:renderUsers,data:renderData}[v]||(()=>{}))()}
+function render(){$("#docName").value=state.document.name;$("#appVersion").textContent=`Taz - v${APP_VERSION} / s${SCHEMA_VERSION}`;$("#userButton").textContent=currentUser()?`♙ ${currentUser().pseudo}`:"♙ Utilisateur…";$$("nav button").forEach(b=>b.classList.toggle("active",b.dataset.view===currentView));$$(".view").forEach(v=>v.classList.toggle("active",v.id==="view-"+currentView));renderView(currentView)}
+function renderView(v){({dashboard:renderDashboard,equipments:renderEquipments,services:renderServices,flows:renderFlows,search:renderGlobalSearch,map:renderMap,zones:renderZones,vlans:renderVlans,references:renderReferences,users:renderUsers,data:renderData}[v]||(()=>{}))()}
 function viewHeader(title,actions=""){return`<div class="viewhead"><h1>${title}</h1><div class="actions">${actions}</div></div>`}
 function matches(...values){if(!filterText)return true;const q=norm(filterText);return values.some(v=>norm(v).includes(q))}
 function renderDashboard(){
@@ -199,6 +205,7 @@ function renderDashboard(){
 function toolbar(addLabel,extra=""){return`<div class="toolbar"><input class="search" type="search" value="${esc(filterText)}" placeholder="Rechercher…" aria-label="Rechercher">${extra}<button class="btn small" data-list-reset>Réinitialiser</button><button class="btn primary" data-action="add">${addLabel}</button></div>`}
 let searchTimer;function bindSearch(root){$(".search",root)?.addEventListener("input",e=>{filterText=e.target.value;clearTimeout(searchTimer);searchTimer=setTimeout(()=>{renderView(currentView);const input=$(".search",$("#view-"+currentView));input?.focus();input?.setSelectionRange(input.value.length,input.value.length)},100)})}
 function bindListFilters(root,kind){$$("[data-list-filter]",root).forEach(x=>x.onchange=e=>{listFilters[kind][e.target.dataset.listFilter]=e.target.value;renderView(currentView)});$("[data-list-reset]",root).onclick=()=>{filterText="";Object.keys(listFilters[kind]).forEach(k=>listFilters[kind][k]="");renderView(currentView)}}
+function bindRowEditing(root,rows,open){$$("tbody tr",root).forEach((tr,index)=>{tr.classList.add("editable-row");tr.title="Double-cliquer pour modifier";tr.ondblclick=e=>{if(e.target.closest("button,a,input,select,textarea"))return;open(rows[index].id)}})}
 function renderGlobalSearch(){
   const root=$("#view-search"),q=norm(globalQuery),results=[];if(q.length>=2){
     for(const e of state.equipments){const base=[e.name,e.manufacturer,e.model,e.description,zone(e.zoneId)?.name,ref(state.equipmentTypes,e.typeId)?.name];if(base.some(x=>norm(x).includes(q)))results.push({kind:"equipment",id:e.id,title:e.name,sub:`Équipement · ${zone(e.zoneId)?.name||""}`});for(const n of e.interfaces||[]){if([n.name,n.mac,n.description].some(x=>norm(x).includes(q)))results.push({kind:"equipment",id:e.id,title:n.name,sub:`Interface · ${e.name}`});for(const ip of n.ips||[])if(norm(ip.address).includes(q))results.push({kind:"equipment",id:e.id,title:ip.address,sub:`${ip.family===4?"IPv4":"IPv6"} · ${e.name} · ${n.name}`});for(const dns of n.dns||[])if(norm(dns.name).includes(q))results.push({kind:"equipment",id:e.id,title:dns.name,sub:`DNS · ${e.name} · ${n.name}`})}}
@@ -215,10 +222,11 @@ function renderEquipments(){
   $$("tbody tr",root).forEach((tr,i)=>{if(tr.children[5])tr.children[5].textContent=servicesOnEquipment(rows[i].id).length});
   $$("[data-detail]",root).forEach(b=>b.remove());
   bindSearch(root);bindListFilters(root,"equipments");$('[data-action="add"]',root).onclick=()=>openEquipmentForm();
+  bindRowEditing(root,rows,openEquipmentForm);
   $$("[data-edit]",root).forEach(b=>b.onclick=()=>openEquipmentForm(b.dataset.edit));$$("[data-copy]",root).forEach(b=>b.onclick=()=>duplicateEquipment(b.dataset.copy));$$("[data-delete]",root).forEach(b=>b.onclick=()=>deleteEquipment(b.dataset.delete));
 }
 function openEquipmentForm(id=null){
-  if(!state.zones.length){toast("Créez d'abord une zone dans les référentiels.","error");setView("references");return}
+  if(!state.zones.length){toast("Créez d'abord une zone.","error");setView("zones");return}
   const old=id?equip(id):null,e=old||{name:"",typeId:state.equipmentTypes[0]?.id,zoneId:state.zones[0]?.id,status:"PENDING",manufacturer:"",model:"",description:""},svcs=old?sortedBy(servicesOnEquipment(id),s=>s.name):[];
   let afterSave=null;
   modal(old?"Modifier l'équipement":"Nouvel équipement",`<div class="formgrid">
@@ -312,7 +320,7 @@ function renderServices(){
   root.innerHTML=viewHeader("Services")+toolbar("+ Service",filters)+(rows.length?`<div class="tablewrap"><table><thead><tr><th>Nom</th><th>Équipement</th><th>Type</th><th>Version</th><th>Statut</th><th>Flux</th><th>Actions</th></tr></thead><tbody>${rows.map(s=>`<tr><td><b>${esc(s.name)}</b></td><td>${esc(equip(s.equipmentId)?.name)}</td><td>${esc(ref(state.serviceTypes,s.typeId)?.name)}</td><td>${esc(s.version)}</td><td>${badge(s.status)}</td><td>${state.flows.filter(f=>f.endpoints.some(ep=>ep.serviceId===s.id)).length}</td><td><div class="actions"><button class="btn small" data-detail="${s.id}">Détails</button><button class="btn small" data-edit="${s.id}">Modifier</button><button class="btn small" data-copy="${s.id}">Dupliquer</button><button class="btn small danger" data-delete="${s.id}">Supprimer</button></div></td></tr>`).join("")}</tbody></table></div>`:'<div class="empty">Aucun service.</div>');
   $$("tbody tr",root).forEach((tr,i)=>{if(tr.children[1])tr.children[1].textContent=serviceDeployments(rows[i]).map(d=>equip(d.equipmentId)?.name).filter(Boolean).join(", ")||"Non rattaché"});
   $$("[data-detail]",root).forEach(b=>b.remove());
-  bindSearch(root);bindListFilters(root,"services");$('[data-action="add"]',root).onclick=()=>openServiceForm();$$("[data-edit]",root).forEach(b=>b.onclick=()=>openServiceForm(b.dataset.edit));$$("[data-copy]",root).forEach(b=>b.onclick=()=>duplicateService(b.dataset.copy));$$("[data-delete]",root).forEach(b=>b.onclick=()=>deleteService(b.dataset.delete));
+  bindSearch(root);bindListFilters(root,"services");bindRowEditing(root,rows,openServiceForm);$('[data-action="add"]',root).onclick=()=>openServiceForm();$$("[data-edit]",root).forEach(b=>b.onclick=()=>openServiceForm(b.dataset.edit));$$("[data-copy]",root).forEach(b=>b.onclick=()=>duplicateService(b.dataset.copy));$$("[data-delete]",root).forEach(b=>b.onclick=()=>deleteService(b.dataset.delete));
 }
 function openServiceForm(id=null,forcedEquipment=null){
   if(!state.equipments.length){toast("Créez d'abord un équipement.","error");setView("equipments");return}
@@ -415,7 +423,7 @@ function renderFlows(){
   const root=$("#view-flows"),f=listFilters.flows,rows=sortedBy(state.flows.filter(x=>(!f.protocolId||x.protocolId===f.protocolId)&&(!f.status||x.status===f.status)&&(!f.flowState||flowState(x)===f.flowState)&&(!f.direction||x.direction===f.direction)&&(!f.serviceId||x.endpoints.some(ep=>ep.serviceId===f.serviceId))&&matches(x.status,x.description,protocol(x.protocolId)?.name,...(x.anomalies||[]),...x.endpoints.map(ep=>mapEndpointName(ep)),...x.endpoints.flatMap(ep=>ep.ports.map(p=>`${p.start} ${p.end} ${p.usage}`)))),x=>`${mapEndpointName(x.endpoints[0])} ${mapEndpointName(x.endpoints[1])}`);
   const filters=`<select data-list-filter="serviceId" aria-label="Filtrer par service">${options(state.services,f.serviceId,x=>serviceName(x.id),"Tous les services")}</select><select data-list-filter="protocolId" aria-label="Filtrer par protocole">${options(state.protocols,f.protocolId,x=>x.name,"Tous les protocoles")}</select><select data-list-filter="status" aria-label="Filtrer par statut"><option value="">Tous les statuts</option>${statusValues.map(x=>`<option ${f.status===x?"selected":""}>${x}</option>`).join("")}</select><select data-list-filter="flowState" aria-label="Filtrer par état"><option value="">Tous les états</option>${["OK","DRAFT"].map(x=>`<option ${f.flowState===x?"selected":""}>${x}</option>`).join("")}</select><select data-list-filter="direction" aria-label="Filtrer par sens"><option value="">Tous les sens</option><option value="a-b" ${f.direction==="a-b"?"selected":""}>Local → distant</option><option value="b-a" ${f.direction==="b-a"?"selected":""}>Distant → local</option><option value="both" ${f.direction==="both"?"selected":""}>Bidirectionnel</option></select>`;
   root.innerHTML=viewHeader("Flux")+toolbar("+ Flux",filters)+(rows.length?`<div class="tablewrap"><table><thead><tr><th>Équipement / service local</th><th>Sens</th><th>Équipement / service distant</th><th>Protocole</th><th>Ports local / distant</th><th>Statut</th><th>État</th><th>Actions</th></tr></thead><tbody>${rows.map(f=>`<tr><td>${esc(mapEndpointName(f.endpoints[0]))}</td><td>${f.direction==="a-b"?"→":f.direction==="b-a"?"←":f.direction==="both"?"↔":"—"}</td><td>${esc(mapEndpointName(f.endpoints[1]))}</td><td>${esc(protocol(f.protocolId)?.name)}</td><td>${esc(portsText(f.endpoints[0]?.ports))}<br>${esc(portsText(f.endpoints[1]?.ports))}</td><td>${badge(f.status)}</td><td>${badge(flowState(f))}</td><td><div class="actions"><button class="btn small" data-edit="${f.id}">Modifier</button><button class="btn small" data-copy="${f.id}">Dupliquer</button><button class="btn small danger" data-delete="${f.id}">Supprimer</button></div></td></tr>`).join("")}</tbody></table></div>`:'<div class="empty">Aucun flux.</div>');
-  bindSearch(root);bindListFilters(root,"flows");$('[data-action="add"]',root).onclick=()=>openFlowForm();$$("[data-edit]",root).forEach(b=>b.onclick=()=>openFlowForm(b.dataset.edit));$$("[data-copy]",root).forEach(b=>b.onclick=()=>openFlowForm(null,b.dataset.copy));$$("[data-delete]",root).forEach(b=>b.onclick=()=>deleteFlow(b.dataset.delete));
+  bindSearch(root);bindListFilters(root,"flows");bindRowEditing(root,rows,openFlowForm);$('[data-action="add"]',root).onclick=()=>openFlowForm();$$("[data-edit]",root).forEach(b=>b.onclick=()=>openFlowForm(b.dataset.edit));$$("[data-copy]",root).forEach(b=>b.onclick=()=>openFlowForm(null,b.dataset.copy));$$("[data-delete]",root).forEach(b=>b.onclick=()=>deleteFlow(b.dataset.delete));
 }
 function openFlowForm(id=null,copyId=null){
   const deployments=state.services.flatMap(s=>serviceDeployments(s));if(!deployments.length){toast("Rattachez d'abord un service à un équipement.","error");setView("equipments");return}const firstDeployment=deployments[0];
@@ -448,10 +456,25 @@ function openFlowForm(id=null,copyId=null){
 function deleteFlow(id){confirmAction("Supprimer le flux","Supprimer ce flux ?",()=>transact("Flux supprimé",()=>state.flows=state.flows.filter(x=>x.id!==id),{destructive:true}))}
 </script>
 <script>
+function bindEntityActions(root,kind){
+  $('[data-action="add"]',root).onclick=()=>openRefForm(kind);
+  $$('[data-edit]',root).forEach(b=>b.onclick=()=>openRefForm(kind,b.dataset.edit));
+  $$('[data-delete]',root).forEach(b=>b.onclick=()=>deleteRef(kind,b.dataset.delete));
+}
+function renderZones(){
+  const root=$("#view-zones"),f=listFilters.zones,rows=sortedBy(state.zones.filter(z=>(f.external===""||String(!!z.external)===f.external)&&matches(z.name,z.description,z.external?"externe":"interne")),z=>z.name);
+  const filters=`<select data-list-filter="external" aria-label="Filtrer par type de zone"><option value="">Toutes les zones</option><option value="false" ${f.external==="false"?"selected":""}>Internes</option><option value="true" ${f.external==="true"?"selected":""}>Externes</option></select>`;
+  root.innerHTML=viewHeader("Zones")+toolbar("+ Zone",filters)+(rows.length?`<div class="tablewrap"><table><thead><tr><th>Nom</th><th>Couleur</th><th>Type</th><th>Équipements</th><th>VLAN</th><th>Description</th><th>Actions</th></tr></thead><tbody>${rows.map(z=>`<tr><td><b>${esc(z.name)}</b></td><td><span style="display:inline-block;width:28px;height:18px;border-radius:5px;background:${esc(z.color||"#4f7cff")};border:1px solid var(--line)" aria-label="Couleur ${esc(z.color||"#4f7cff")}"></span></td><td>${z.external?"Externe":"Interne"}</td><td>${state.equipments.filter(e=>e.zoneId===z.id).length}</td><td>${state.vlans.filter(v=>v.zoneId===z.id).length}</td><td>${esc(z.description||"—")}</td><td><div class="actions"><button class="btn small" data-edit="${z.id}">Modifier</button><button class="btn small danger" data-delete="${z.id}">Supprimer</button></div></td></tr>`).join("")}</tbody></table></div>`:'<div class="empty">Aucune zone.</div>');
+  bindSearch(root);bindListFilters(root,"zones");bindRowEditing(root,rows,id=>openRefForm("zone",id));bindEntityActions(root,"zone");
+}
+function renderVlans(){
+  const root=$("#view-vlans"),f=listFilters.vlans,rows=[...state.vlans].filter(v=>(!f.zoneId||v.zoneId===f.zoneId)&&matches(v.name,v.number,v.description,zone(v.zoneId)?.name)).sort((a,b)=>alphaCompare(zone(a.zoneId)?.name,zone(b.zoneId)?.name)||a.number-b.number||alphaCompare(a.name,b.name));
+  const filters=`<select data-list-filter="zoneId" aria-label="Filtrer par zone">${options(state.zones,f.zoneId,x=>x.name,"Toutes les zones")}</select>`;
+  root.innerHTML=viewHeader("VLAN")+toolbar("+ VLAN",filters)+(rows.length?`<div class="tablewrap"><table><thead><tr><th>Identifiant</th><th>Nom</th><th>Zone</th><th>Interfaces</th><th>Description</th><th>Actions</th></tr></thead><tbody>${rows.map(v=>`<tr><td><b>${v.number}</b></td><td>${esc(v.name)}</td><td>${esc(zone(v.zoneId)?.name||"—")}</td><td>${state.equipments.reduce((count,e)=>count+e.interfaces.filter(i=>i.accessVlanId===v.id||i.nativeVlanId===v.id||(i.taggedVlanIds||[]).includes(v.id)).length,0)}</td><td>${esc(v.description||"—")}</td><td><div class="actions"><button class="btn small" data-edit="${v.id}">Modifier</button><button class="btn small danger" data-delete="${v.id}">Supprimer</button></div></td></tr>`).join("")}</tbody></table></div>`:'<div class="empty">Aucun VLAN.</div>');
+  bindSearch(root);bindListFilters(root,"vlans");bindRowEditing(root,rows,id=>openRefForm("vlan",id));bindEntityActions(root,"vlan");
+}
 function renderReferences(){
   const root=$("#view-references");root.innerHTML=viewHeader("Référentiels")+`<div class="refgrid">
-  ${refCard("Zones","zone",state.zones,x=>`${x.external?"Externe · ":""}${x.description||""}`)}
-  ${refCard("VLAN","vlan",state.vlans,x=>`${x.number} · ${zone(x.zoneId)?.name||"?"}`)}
   ${refCard("Types d'équipements","equipmentType",state.equipmentTypes,x=>x.description)}
   ${refCard("Types de services","serviceType",state.serviceTypes,x=>x.description)}
   ${refCard("Protocoles","protocol",state.protocols,x=>x.description)}
@@ -461,13 +484,15 @@ function renderReferences(){
 function refCard(title,kind,list,sub){return`<div class="card"><div class="viewhead"><h2>${title}</h2><button class="btn small primary" data-refadd="${kind}">+</button></div>${list.length?sortedBy(list,x=>x.name).map(x=>`<div class="listitem"><div class="row"><b>${esc(x.name)}</b>${x.builtin?'<span class="badge">Intégré</span>':`<span><button class="btn small" data-kind="${kind}" data-refedit="${x.id}">✎</button> <button class="btn small danger" data-kind="${kind}" data-refdel="${x.id}">×</button></span>`}</div><div class="muted">${esc(sub(x)||"")}</div></div>`).join(""):'<p class="muted">Aucune valeur.</p>'}</div>`}
 function listForKind(k){return k==="zone"?state.zones:k==="vlan"?state.vlans:k==="equipmentType"?state.equipmentTypes:k==="serviceType"?state.serviceTypes:k==="protocol"?state.protocols:state.knownPorts}
 function openRefForm(kind,id=null){
+  if(kind==="vlan"&&!state.zones.length){toast("Créez d'abord une zone.","error");setView("zones");return}
   const list=listForKind(kind),old=ref(list,id)||{},name=old.name||"";
   let fields=`<div class="field"><label>Nom *</label><input name="name" required value="${esc(name)}"></div>`;
   if(kind==="zone")fields+=`<div class="field"><label>Couleur</label><input name="color" type="color" value="${esc(old.color||"#4f7cff")}"></div><div class="field"><label><input name="external" type="checkbox" ${old.external?"checked":""}> Zone externe</label></div>`;
   if(kind==="vlan")fields=`<div class="field"><label>Nom *</label><input name="name" required value="${esc(name)}"></div><div class="field"><label>Identifiant *</label><input name="number" type="number" min="1" max="4094" required value="${esc(old.number||"")}"></div><div class="field"><label>Zone *</label><select name="zoneId">${options(state.zones,old.zoneId)}</select></div>`;
   if(kind==="knownPort")fields=`<div class="field"><label>Service standard *</label><input name="name" required value="${esc(name)}"></div><div class="field"><label>Port *</label><input name="number" type="number" min="1" max="65535" required value="${esc(old.number||"")}"></div><div class="field"><label>Protocole *</label><select name="protocolId">${options(state.protocols,old.protocolId)}</select></div><div class="field"><label>Alias, séparés par des virgules</label><input name="aliases" value="${esc((old.aliases||[]).join(", "))}"></div>`;
   fields+=`<div class="field full"><label>Description</label><textarea name="description">${esc(old.description||"")}</textarea></div>`;
-  modal(id?"Modifier la valeur":"Ajouter une valeur",`<div class="formgrid">${fields}</div>`,fd=>{const v=Object.fromEntries(fd);v.external=fd.has("external");if(kind==="vlan"){v.number=+v.number;if(!v.zoneId)throw Error("La zone est obligatoire.");if(id&&old.zoneId!==v.zoneId&&refUsed("vlan",id))throw Error("Le changement de zone est interdit tant que ce VLAN est utilisé par une interface.");if(state.vlans.some(x=>x.id!==id&&x.zoneId===v.zoneId&&(x.number===v.number||norm(x.name)===norm(v.name))))throw Error("Le nom ou l'identifiant VLAN existe déjà dans cette zone.")}else if(kind==="knownPort"){v.number=+v.number;v.aliases=v.aliases.split(",").map(x=>x.trim()).filter(Boolean);if(state.knownPorts.some(x=>x.id!==id&&x.protocolId===v.protocolId&&x.number===v.number))throw Error("Cette correspondance protocole-port existe déjà.")}else ensureUnique(list,v.name,id,()=>true,"Ce nom existe déjà.");transact(id?"Référentiel modifié":"Référentiel enrichi",()=>{if(id)Object.assign(old,v,{updatedAt:now()});else list.push(entityMeta({...v,builtin:false}))})});
+  const labels={zone:{name:"Zone",add:"Ajouter une zone",edit:"Modifier la zone"},vlan:{name:"VLAN",add:"Ajouter un VLAN",edit:"Modifier le VLAN"},equipmentType:{name:"Type d'équipement",add:"Ajouter un type d'équipement",edit:"Modifier le type d'équipement"},serviceType:{name:"Type de service",add:"Ajouter un type de service",edit:"Modifier le type de service"},protocol:{name:"Protocole",add:"Ajouter un protocole",edit:"Modifier le protocole"},knownPort:{name:"Port connu",add:"Ajouter un port connu",edit:"Modifier le port connu"}},label=labels[kind]||{name:"Valeur",add:"Ajouter une valeur",edit:"Modifier la valeur"};
+  modal(id?label.edit:label.add,`<div class="formgrid">${fields}</div>`,fd=>{const v=Object.fromEntries(fd);v.external=fd.has("external");if(kind==="vlan"){v.number=+v.number;if(!v.zoneId)throw Error("La zone est obligatoire.");if(id&&old.zoneId!==v.zoneId&&refUsed("vlan",id))throw Error("Le changement de zone est interdit tant que ce VLAN est utilisé par une interface.");if(state.vlans.some(x=>x.id!==id&&x.zoneId===v.zoneId&&(x.number===v.number||norm(x.name)===norm(v.name))))throw Error("Le nom ou l'identifiant VLAN existe déjà dans cette zone.")}else if(kind==="knownPort"){v.number=+v.number;v.aliases=v.aliases.split(",").map(x=>x.trim()).filter(Boolean);if(state.knownPorts.some(x=>x.id!==id&&x.protocolId===v.protocolId&&x.number===v.number))throw Error("Cette correspondance protocole-port existe déjà.")}else ensureUnique(list,v.name,id,()=>true,"Ce nom existe déjà.");transact(id?`${label.name} modifié`:`${label.name} créé`,()=>{if(id)Object.assign(old,v,{updatedAt:now()});else list.push(entityMeta({...v,builtin:false}))})});
 }
 function refUsed(kind,id){
   if(kind==="zone")return state.equipments.some(x=>x.zoneId===id)||state.vlans.some(x=>x.zoneId===id);
@@ -785,7 +810,7 @@ async function initializeApp(){
       break
     }catch{}
   }
-  const savedView=loadPrefs().views?.[state.document.id];if(["dashboard","equipments","services","flows","search","map","references","users","data"].includes(savedView))currentView=savedView;
+  const savedView=loadPrefs().views?.[state.document.id];if(["dashboard","equipments","services","flows","search","map","zones","vlans","references","users","data"].includes(savedView))currentView=savedView;
   render();ensureUser();
   if(restored)toast("rechargement du dernier contexte","ok");
 }
