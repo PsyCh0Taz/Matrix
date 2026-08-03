@@ -5,10 +5,10 @@
   "document": {
     "id": "673c3c97-5fbb-4ef5-98b1-7c092bf0cc99",
     "name": "CWIX",
-    "revision": 299,
-    "parentHash": "77e0523e",
+    "revision": 308,
+    "parentHash": "81441ef8",
     "createdAt": "2026-07-30T16:46:15.012Z",
-    "updatedAt": "2026-08-03T19:49:29.663Z"
+    "updatedAt": "2026-08-03T20:06:00.620Z"
   },
   "users": [
     {
@@ -23,12 +23,12 @@
     {
       "name": "ZP_Clients",
       "color": "#4f7cff",
-      "description": "\n",
+      "description": "",
       "external": false,
       "builtin": false,
       "id": "db375463-7d3b-4b41-aeb0-22fb7e9f7279",
       "createdAt": "2026-08-03T16:19:06.245Z",
-      "updatedAt": "2026-08-03T16:19:06.245Z"
+      "updatedAt": "2026-08-03T19:59:21.704Z"
     },
     {
       "name": "ZP_Serveurs",
@@ -1068,7 +1068,7 @@
       ],
       "id": "596a95e2-2bbc-483f-b3dd-4de2f221da4b",
       "createdAt": "2026-08-03T16:24:52.170Z",
-      "updatedAt": "2026-08-03T19:41:33.918Z",
+      "updatedAt": "2026-08-03T20:06:00.620Z",
       "protocolId": "builtin:protocol:tcp",
       "ports": [
         {
@@ -1164,7 +1164,7 @@
       ],
       "id": "e7ef9f29-e017-4c0b-a8ca-914abefbaaa8",
       "createdAt": "2026-08-03T16:25:32.760Z",
-      "updatedAt": "2026-08-03T19:41:33.918Z",
+      "updatedAt": "2026-08-03T20:06:00.620Z",
       "protocolId": "builtin:protocol:tcp",
       "ports": [
         {
@@ -1197,7 +1197,7 @@
       ],
       "id": "82a3a415-631b-468e-a824-84dddcf83102",
       "createdAt": "2026-08-03T16:43:11.449Z",
-      "updatedAt": "2026-08-03T19:41:33.918Z",
+      "updatedAt": "2026-08-03T20:06:00.620Z",
       "protocolId": "builtin:protocol:tcp",
       "ports": [
         {
@@ -1244,7 +1244,7 @@
       ],
       "id": "764df1f9-f0d7-45fc-8d58-d8b283298a90",
       "createdAt": "2026-08-03T17:04:43.192Z",
-      "updatedAt": "2026-08-03T19:41:33.918Z",
+      "updatedAt": "2026-08-03T20:06:00.620Z",
       "protocolId": "builtin:protocol:tcp",
       "ports": [
         {
@@ -1291,7 +1291,7 @@
       ],
       "id": "87b765dc-a3b9-4913-b4d5-df115385bb76",
       "createdAt": "2026-08-03T17:24:22.825Z",
-      "updatedAt": "2026-08-03T19:41:33.918Z",
+      "updatedAt": "2026-08-03T20:06:00.620Z",
       "protocolId": "builtin:protocol:tcp",
       "ports": [
         {
@@ -1365,7 +1365,7 @@
       ],
       "id": "fce63c31-5a18-42f3-b0f4-0f6d1a7e4872",
       "createdAt": "2026-08-03T17:37:28.797Z",
-      "updatedAt": "2026-08-03T19:41:33.918Z",
+      "updatedAt": "2026-08-03T20:06:00.620Z",
       "protocolId": "builtin:protocol:tcp",
       "ports": [
         {
@@ -1416,7 +1416,7 @@
       ],
       "id": "366da634-e647-48ae-848d-6a6b7f3753d2",
       "createdAt": "2026-08-03T18:51:52.780Z",
-      "updatedAt": "2026-08-03T19:41:33.918Z",
+      "updatedAt": "2026-08-03T20:06:00.620Z",
       "ports": [
         {
           "start": 1521,
@@ -1458,7 +1458,7 @@
       ],
       "id": "0576a367-d32c-407c-8112-527e145d398c",
       "createdAt": "2026-08-03T19:09:12.377Z",
-      "updatedAt": "2026-08-03T19:41:33.918Z",
+      "updatedAt": "2026-08-03T20:06:00.620Z",
       "ports": [
         {
           "start": 1,
@@ -1649,9 +1649,9 @@
       "anomalies": [],
       "id": "72f8df99-a7a4-4f82-a72b-d73740733565",
       "createdAt": "2026-08-03T18:50:24.562Z",
-      "updatedAt": "2026-08-03T19:21:00.502Z",
+      "updatedAt": "2026-08-03T20:00:20.902Z",
       "groupContexts": [],
-      "status": "ONLINE"
+      "status": "CRASHED"
     },
     {
       "endpoints": [
@@ -1750,11 +1750,11 @@
       ],
       "protocolId": "builtin:protocol:tcp",
       "direction": "both",
-      "description": "",
+      "description": "fqsfs",
       "anomalies": [],
       "id": "01c032db-9737-4d9c-891d-8f8ad5e42925",
       "createdAt": "2026-08-03T18:51:03.409Z",
-      "updatedAt": "2026-08-03T19:20:37.960Z",
+      "updatedAt": "2026-08-03T19:59:35.199Z",
       "status": "ONLINE",
       "groupContexts": []
     },
@@ -1789,9 +1789,9 @@
       "anomalies": [],
       "id": "f096f0fd-da4f-4e2c-9dd3-210ea32a7c44",
       "createdAt": "2026-08-03T18:52:07.177Z",
-      "updatedAt": "2026-08-03T19:24:40.091Z",
+      "updatedAt": "2026-08-03T19:59:55.501Z",
       "groupContexts": [],
-      "status": "PENDING"
+      "status": "OFFLINE"
     },
     {
       "endpoints": [

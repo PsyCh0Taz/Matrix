@@ -269,6 +269,7 @@ Persistance locale :
 - Le thème, les filtres temporaires, l'utilisateur actuellement sélectionné, la copie de récupération, les permissions et la référence technique du fichier local ouvert sont exclus des exports.
 - L'application propose l'import manuel d'un fichier JSON et son export par téléchargement.
 - L'application propose également, lorsque le navigateur le permet, l'ouverture et la réécriture directes d'un fichier local.
+- Le sélecteur de fichiers d'Edge permet de choisir un document existant sur un partage Windows visible par le poste ; l'application ne tente jamais d'accéder silencieusement à un chemin UNC non autorisé par l'utilisateur.
 - Microsoft Edge est obligatoirement pris en charge.
 - Mozilla Firefox est pris en charge dans la mesure permise par ses API ; l'import et l'export JSON manuels y assurent la solution de repli.
 - Les deux dernières versions stables de Microsoft Edge et Mozilla Firefox ainsi que la version Firefox ESR courante sont prises en charge.
@@ -291,12 +292,14 @@ Persistance locale :
 - L'interface affiche l'état « Enregistrement », « Enregistré » ou « Échec ».
 - En cas d'échec, l'état non sauvegardé est conservé et une nouvelle tentative est proposée.
 - L'application avertit l'utilisateur lorsqu'elle détecte une modification externe du fichier ou une autre instance susceptible d'entrer en concurrence.
+- Tant qu'un fichier direct reste associé, l'application le relit périodiquement afin de détecter les modifications réalisées depuis un autre poste.
 - Chaque révision conserve l'empreinte de sa révision parente.
 - L'application mémorise séparément l'UUID, la révision et l'empreinte du dernier état externe lu ou écrit avec succès.
 - Avant chaque écriture, elle compare l'état actuel du fichier externe à cette référence persistée.
 - L'empreinte de la révision parente reste utilisée pour représenter la lignée du document, mais la détection de concurrence repose sur la référence du dernier état externe connu.
 - En cas de divergence, l'autosauvegarde est suspendue et aucun contenu n'est écrasé silencieusement.
-- L'utilisateur peut alors recharger la version externe, confirmer explicitement son écrasement par la version courante ou enregistrer la version courante ailleurs.
+- L'utilisateur peut alors fusionner ses changements avec la version externe, abandonner ses changements et recharger cette version, confirmer explicitement son écrasement par la version courante ou enregistrer la version courante ailleurs.
+- Cette collaboration est optimiste et ne constitue pas une édition temps réel : deux écritures commencées exactement au même instant sur le partage ne peuvent pas bénéficier d'un verrou distribué fourni par le navigateur.
 - Si un import ou une restauration est lancé alors qu'un fichier local est associé, l'application demande où enregistrer le résultat avant toute écriture.
 - L'utilisateur peut choisir d'écrire dans le fichier actuellement ouvert, d'enregistrer dans un nouveau fichier ou de détacher le fichier ouvert et de travailler sans sauvegarde directe.
 - Aucun fichier n'est réécrit avant ce choix explicite.
